@@ -3,6 +3,32 @@ Generated: 2026-04-30T11:35:09.602131+00:00
 Audit version: v9 (handover release)
 
 ================================================================
+*** SUPERSEDED ON 2026-04-30T18:30:00Z ***
+================================================================
+This file is preserved for audit-trail completeness.  The current
+canonical pipeline status is:
+
+  audit_final/FINAL_COMPUTATIONAL_AUDIT_STATUS_v2_SUPERSEDES_20260430T1135.txt
+
+Specifically:
+  - The "DATA LOSS" section below (lines 49-67 of this file)
+    describing cu2i2_veratrole_pi as DATA_LOST_POD_WIPE is OBSOLETE.
+  - The output file was located on a migrated compute node and
+    recovered intact at 2026-04-30T15:19Z.  Recovered SHA-256:
+    f2a9007b88dc7098f266224b8715c741653e75e1d547dafd4236b8b2584a8ff2
+  - BELEGEN row 19 verdict is RECOVERED_RECONFIRMED in the v2 file.
+  - Geometry descriptors are now in BINDING_SURVIVAL_TABLE.csv
+    (Cu-C 2.24/2.37 A, closest Cu-O 3.91 A, Cu-Cu 2.478 A, n_imag 0).
+  - Class A subtotal for Cu2I2: 5 -> 6; total Class A: 20 -> 21.
+
+The remainder of this file (PIPELINE STATUS, OPTIONAL HIGH-GRID
+SENSITIVITY, ARTIFACTS DELIVERED) is still accurate and is carried
+forward unchanged in the v2 status.  Use the v2 file as the
+single source of truth.
+================================================================
+
+
+================================================================
 PIPELINE STATUS
 ================================================================
 Tier A naked Cu+ adducts:                   COMPLETE  (18 species)

@@ -9,9 +9,12 @@ procedure.
 - ORCA 6.1.1 official binary (free for academic use; available from
   <https://orcaforum.kofo.mpg.de/>)
 - Sufficient compute to run B3LYP-D3(BJ)/def2-TZVP optimizations and
-  frequency analyses on systems up to 30 atoms. Production
-  calculations in this study were run on NVIDIA A100 GPUs (RunPod)
-  with wall times of 30 minutes to 6 hours per opt+freq job.
+  frequency analyses on systems up to ~30 atoms. Production
+  calculations in this study were run on RunPod A100-hosted instances
+  using the CPU resources available on those nodes (typically 16
+  cores, 64 GB RAM); ORCA DFT jobs of this size are CPU-bound and
+  no GPU acceleration is required to reproduce the reported results.
+  Typical wall times were 30 minutes to 6 hours per opt+freq job.
 
 ## Reconstructing an input file
 
@@ -37,6 +40,29 @@ Example template inputs are provided in
 [`orca_input_templates/`](orca_input_templates/) for the Set D V2
 veratrole rotamer scan and the Cu2I2 rhombic reference monomer at
 both DefGrid3 and Grid5 grid settings.
+
+### Final-XYZ vs original-trajectory reconstruction
+
+The XYZ block in `ORCA_GEOMETRY_AUDIT.csv` is the **final optimized
+geometry** of each species. Using it as the starting point for a
+fresh ORCA optimization will:
+
+- reliably reproduce the **single-point** energy and **frequency**
+  validation of the reported minimum (the optimizer should converge
+  in 1–2 cycles to the same minimum), and
+- **not** reproduce the original optimization trajectory or any
+  alternative basins that the original starting geometry might have
+  reached.
+
+To reproduce the **original optimization path** (e.g. for testing
+basin selection or starting-geometry sensitivity), use the archived
+starting geometries instead:
+
+- Set D V2 (veratrole rotamer scan): `initial_xyz` field in
+  `audit_final_setD_alt_diag/setD_alt_v2_analysis.json`
+- Set A/B/C: `audit_final/EXPERIMENT_RAW_PROVENANCE.csv` records
+  the seed-geometry source for each species
+- Grid-sensitivity test: `audit_final_setD_alt_diag/grid_test/inputs/*.xyz`
 
 ## Reconstructing a Set D V2 calculation
 

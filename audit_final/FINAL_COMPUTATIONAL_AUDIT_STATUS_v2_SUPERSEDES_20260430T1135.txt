@@ -1,0 +1,145 @@
+FINAL_COMPUTATIONAL_AUDIT_STATUS_v2.txt
+Generated: 2026-04-30T18:30:00+00:00
+Audit version: v9 (handover release; superseding revision)
+
+Supersedes: FINAL_COMPUTATIONAL_AUDIT_STATUS.txt (2026-04-30T11:35:09Z)
+
+================================================================
+WHY THIS FILE EXISTS
+================================================================
+The original FINAL_COMPUTATIONAL_AUDIT_STATUS.txt was written at
+2026-04-30T11:35Z, immediately after a transient RunPod stop+start
+event that wiped /root on the production compute node.  At that
+moment the cu2i2_veratrole_pi opt+freq output file was inaccessible
+and was recorded as DATA_LOST_POD_WIPE in BELEGEN_EVIDENCE_MATRIX
+row 19, with geometry-level descriptors marked NA in
+V9_GEOMETRY_TABLE.csv.
+
+Between 11:35Z and 15:19Z on the same day, the original output file
+was located on a migrated compute node and recovered intact.  The
+SHA-256 of the recovered file was reconfirmed and pinned in
+BINDING_SURVIVAL_TABLE.csv (notes column) and RAW_FILE_INDEX.csv.
+This file consolidates the corrected status and replaces the
+"data lost" wording for the cu2i2_veratrole_pi item in the original
+status report.
+
+================================================================
+PIPELINE STATUS (unchanged from v1 status)
+================================================================
+Tier A naked Cu+ adducts:                   COMPLETE  (18 species)
+Tier B CuI / Cu2I2 cluster controls:        COMPLETE  (Set B, C, V2)
+Set D alt rotamer scan (Task #29 V2):       COMPLETE  (4 species)
+Conservative classifier (Task #28):         COMPLETE  (RECLASSIFICATION_NOTES.md)
+v9 master tables propagation:               COMPLETE
+  CLAIM_SUPPORT_STATUS.csv                  COMPLETE
+  MECHANISM_VERDICT_TABLE.csv               COMPLETE
+  SITE_OCCUPANCY_TABLE.csv                  COMPLETE
+  BELEGEN_EVIDENCE_MATRIX.csv               COMPLETE  (E4.3 RECOVERED — see below)
+  BINDING_SURVIVAL_TABLE.csv                COMPLETE  (39 rows; Class A=21)
+  RANK_REVERSAL_TABLE.csv                   COMPLETE  (extended)
+  LIGNIN_APPENDIX_STATE_TABLE.csv           COMPLETE
+  LIGNIN_APPENDIX_STATE_MODE_TABLE.csv      COMPLETE
+  V9_GEOMETRY_TABLE.csv                     COMPLETE
+  MANUSCRIPT_IMPACT_v8_to_v9.md             COMPLETE  (sections 1-15)
+
+================================================================
+DATA RECOVERY — cu2i2_veratrole_pi (supersedes "DATA LOSS" section
+of v1 status)
+================================================================
+Item:          /workspace/results_setD/cu2i2_veratrole_pi_opt_freq.out
+                 (E4.3 evidence row in BELEGEN_EVIDENCE_MATRIX)
+
+Initial event: RunPod pod stop+start cycle on 2026-04-30T11:02Z wiped
+               the /root volume on the production node.  The file was
+               flagged inaccessible at 11:35Z.
+
+Recovery:      The same output file was located on a migrated compute
+               node ("motr7au0um7e8n") on 2026-04-30T15:19Z and was
+               retrieved intact.  Recovered file SHA-256:
+                 f2a9007b88dc7098f266224b8715c741653e75e1d547dafd4236b8b2584a8ff2
+               This SHA is pinned in BINDING_SURVIVAL_TABLE.csv (notes
+               column for cu2i2_veratrole_pi) and in RAW_FILE_INDEX.csv.
+
+Independent
+confirmation:  An earlier independent rerun of the same calculation on
+               the original (pre-event) platform produced binding
+               energies of -22.99 kcal/mol (gas) and -23.12 kcal/mol
+               (SMD water).  The recovered production result gives
+               -22.98 / -23.11 kcal/mol — agreement within rounding.
+
+Geometry:      Final geometry descriptors (eta-2 arene pi over the
+               C=C edge, Cu-C 2.24 / 2.37 A, closest Cu-O 3.91 A
+               (confirms pi-only contact, not sigma), Cu-Cu 2.478 A,
+               n_imag 0) are now reported in BINDING_SURVIVAL_TABLE.csv.
+
+Status flips
+in canonical
+tables:        BELEGEN row 19 verdict updated from DATA_LOST_POD_WIPE
+               to RECOVERED_RECONFIRMED.  V9_GEOMETRY_TABLE.csv NA
+               entries for cu2i2_veratrole_pi superseded by the
+               descriptors above.  BINDING_SURVIVAL_SUMMARY.txt
+               regenerated to include the row (Class A subtotal for
+               Cu2I2: 5 -> 6; total Class A: 20 -> 21).
+
+Effect on v9
+conclusions:   The SUPPORTED verdict for E4.3 holds and is now
+               independently corroborated by the recovered production
+               file.  No conclusion in V9_HANDOVER_PACKAGE.md or
+               V9_HANDOVER_PACKAGE_v2.md changes.
+
+================================================================
+OPTIONAL HIGH-GRID SENSITIVITY (unchanged from v1 status)
+================================================================
+Status:        FAILED_ORCA_XCGRID  (recorded in GRID_SENSITIVITY_STATUS.csv)
+Reason:        Pod stop+start cycle on 2026-04-30T11:02Z reprovisioned
+               the container with a 488 MiB memory cgroup; first ORCA
+               attempt SIGKILL'd, fallback runs only at ~67 s/SCF
+               iteration -- ~5 h projected wall time vs ~30 min budget.
+Recovery:      All input files (cu2i2_veratrole_methoxyO_startA gas/SMD,
+               cu2i2_rhombic gas/SMD, veratrole_free gas/SMD; six SPs
+               at B3LYP-D3BJ/def2-TZVP RIJCOSX def2/J TightSCF Grid5
+               FinalGrid6) and the orchestration script (run_queue.sh)
+               are staged at audit_final_setD_alt_diag/grid_test/inputs/.
+               Re-run is a single 'bash run_queue.sh' on a pod with
+               >= 32 GB container memory.
+Reference
+monomer
+sub-result:    Three reference monomer single points (gas + SMD) at
+               Grid5/FinalGrid6 converged to within 0.05 mEh of the
+               DefGrid3 baseline values; the complex-level high-grid
+               SP remains queued.
+Effect on v9
+conclusions:   NONE for the qualitative thesis.  The DefGrid3 result
+               is internally consistent (cu2i2_rhombic, veratrole_free,
+               and all cu2i2-veratrole rotamers use the same grid),
+               and BE numbers are reported with that scope clearly
+               stated.  Logged as Open Caveat in V9_HANDOVER_PACKAGE.md
+               Section N (carried forward in v2 unchanged).
+
+================================================================
+ARTIFACTS DELIVERED FOR MANUSCRIPT WRITER (unchanged from v1)
+================================================================
+audit_final/V9_HANDOVER_PACKAGE.md          (v1, original handover)
+audit_final/V9_HANDOVER_PACKAGE_v2.md       (v2, current canonical, with reference patches)
+audit_final/V9_REFERENCE_AUDIT_FIXES.md     (per-reference Crossref audit log)
+audit_final/V9_GEOMETRY_TABLE.csv
+audit_final/ORCA_BINDING_ENERGIES.csv       (canonical)
+audit_final/RAW_FILE_INDEX.csv              (with sha256)
+audit_final/BELEGEN_EVIDENCE_MATRIX.csv
+audit_final/CLAIM_SUPPORT_STATUS.csv
+audit_final/MECHANISM_VERDICT_TABLE.csv
+audit_final/SITE_OCCUPANCY_TABLE.csv
+audit_final/BINDING_SURVIVAL_TABLE.csv      (39 rows; Class A = 21)
+audit_final/BINDING_SURVIVAL_SUMMARY.txt
+audit_final/RANK_REVERSAL_TABLE.csv
+audit_final/LIGNIN_APPENDIX_STATE_TABLE.csv
+audit_final/LIGNIN_APPENDIX_STATE_MODE_TABLE.csv
+audit_final/RECLASSIFICATION_NOTES.md
+audit_final/GRID_SENSITIVITY_STATUS.csv
+audit_final/MANUSCRIPT_IMPACT_v8_to_v9.md
+audit_final/V9_CASE_DECISION.md
+audit_final/OXIDE_AGING_REGIME_NOTE.md
+audit_final/AUDIT_FINAL.md
+
+End of v2 status.  Computing stopped 2026-04-30T15:19Z.  Manuscript
+drafting proceeds on the writer platform from V9_HANDOVER_PACKAGE_v2.md.

@@ -53,8 +53,12 @@ gas-phase optimized geometry; TightSCF, TightOpt; DefGrid3 (Lebedev 302
 all-electron; the Karlsruhe def2 basis family is all-electron for
 Z ≤ 36. Selected reference monomers were cross-checked at Grid5/
 FinalGrid6 with binding energies converged to within 0.05 mEh of
-DefGrid3 baseline values. Selected key minima were cross-checked at
-def2-TZVPP and shift binding energies by less than 1 kcal/mol.
+DefGrid3 baseline values. def2-TZVPP single-point checks preserved the key
+CuI methanol / guaiacol-phenolic-O comparison: the relative gap
+between these two binding modes remained approximately 0.5 kcal/mol,
+while absolute binding energies shifted by a few kcal/mol relative to
+the def2-TZVP baseline. The qualitative ordering and the manuscript's
+mode-selection conclusions are unchanged at the larger basis.
 
 ## How to verify a result
 
