@@ -1,0 +1,23 @@
+complex_id,BE_gas_kcal,BE_smd_kcal,delta_smd_minus_gas_kcal,rank_reversal,set_id,notes
+cu_anisole_methoxyO,-48.78,-20.54,+28.24,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_anisole_pi,-60.15,-27.44,+32.70,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_benzene_pi,-54.44,-23.88,+30.56,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_catechol_bidentate,-33.41,-15.64,+17.78,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_catechol_pi,-59.78,-28.08,+31.71,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_cyclohexanol_O,-58.13,-27.24,+30.89,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_galacturonateH_complex,-50.10,-22.73,+27.38,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_galacturonate_anion_complex,-185.70,-37.91,+147.79,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_guaiacol_methoxyO,-54.48,-20.94,+33.54,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_guaiacol_phenolicO,-28.52,-8.00,+20.51,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_guaiacol_pi,-62.17,-28.48,+33.68,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_meta_methoxyphenol_phenolicO,-12.35,5.37,+17.73,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_meta_methoxyphenol_pi,-63.16,-27.53,+35.64,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_methanol,-47.50,-23.63,+23.87,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_para_methoxyphenol_phenolicO,-49.64,-19.32,+30.32,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_para_methoxyphenol_pi,-58.20,-26.32,+31.88,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_phenol_O,-51.44,-36.39,+15.06,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu_phenol_pi,-80.96,-52.20,+28.76,yes,TIER_A,naked-Cu+; SMD weakens BE for charged complexes
+cu2i2_veratrole_methoxyO_startA,-26.82,-26.24,+0.58,no,D_alt_v2,veratrole on Cu2I2 / [CuI2]- rotamer scan
+cu2i2_veratrole_methoxyO_startB,28.07,22.73,-5.34,no,D_alt_v2,veratrole on Cu2I2 / [CuI2]- rotamer scan
+cui2_veratrole_methoxyO_anion_startA,49.28,53.60,+4.32,no,D_alt_v2,veratrole on Cu2I2 / [CuI2]- rotamer scan
+cui2_veratrole_methoxyO_anion_startB,55.20,47.93,-7.27,no,D_alt_v2,veratrole on Cu2I2 / [CuI2]- rotamer scan

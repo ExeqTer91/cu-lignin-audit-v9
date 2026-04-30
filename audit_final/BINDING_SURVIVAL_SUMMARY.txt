@@ -1,0 +1,64 @@
+BINDING_SURVIVAL_SUMMARY.txt
+Generated: 2026-04-30T18:00:19.808372+00:00
+Total rows: 39
+
+Class counts (Task #28 conservative classifier):
+  A  STRONG_BINDING    : 21
+  B  MODERATE_BINDING  : 1
+  C  WEAK_BINDING      : 0
+  D  METASTABLE_CONTACT: 3
+  E  NON_BINDING       : 14
+
+Per-set counts (A/B/C/D/E):
+  B             A=0  B=0  C=0  D=0  E=8
+  C             A=4  B=0  C=0  D=0  E=4
+  D             A=1  B=0  C=0  D=0  E=0
+  D_alt_v2      A=1  B=0  C=0  D=2  E=1
+  TIER_A        A=15  B=1  C=0  D=1  E=1
+
+Per-ligand class breakdown:
+  anisole_methoxyO                    A=1  B=0  C=0  D=0  E=0
+  anisole_pi                          A=1  B=0  C=0  D=0  E=0
+  benzene_pi                          A=1  B=0  C=0  D=0  E=0
+  catechol_bidentate                  A=1  B=0  C=0  D=0  E=0
+  catechol_pi                         A=1  B=0  C=0  D=0  E=0
+  cyclohexanol_O                      A=1  B=0  C=0  D=0  E=0
+  galacturonateH_complex              A=1  B=0  C=0  D=0  E=0
+  galacturonate_anion_complex         A=1  B=0  C=0  D=0  E=0
+  guaiacol                            A=1  B=0  C=0  D=0  E=7
+  guaiacol_methoxyO                   A=1  B=0  C=0  D=0  E=0
+  guaiacol_phenolicO                  A=0  B=1  C=0  D=0  E=0
+  guaiacol_pi                         A=1  B=0  C=0  D=0  E=0
+  h2o                                 A=1  B=0  C=0  D=0  E=1
+  meta_methoxyphenol_phenolicO        A=0  B=0  C=0  D=1  E=0
+  meta_methoxyphenol_pi               A=1  B=0  C=0  D=0  E=0
+  methanol                            A=2  B=0  C=0  D=0  E=1
+  para_methoxyphenol_phenolicO        A=1  B=0  C=0  D=0  E=0
+  para_methoxyphenol_pi               A=1  B=0  C=0  D=0  E=0
+  phenol                              A=1  B=0  C=0  D=0  E=3
+  phenol_O                            A=0  B=0  C=0  D=0  E=1
+  phenol_pi                           A=1  B=0  C=0  D=0  E=0
+  veratrole                           A=2  B=0  C=0  D=2  E=1
+
+Class-A complexes (STRONG_BINDING):
+  cu2i2_guaiacol_bidentate
+  cu2i2_h2o
+  cu2i2_methanol
+  cu2i2_phenol_O
+  cu2i2_veratrole_methoxyO_startA
+  cu2i2_veratrole_pi
+  cu_anisole_methoxyO
+  cu_anisole_pi
+  cu_benzene_pi
+  cu_catechol_bidentate
+  cu_catechol_pi
+  cu_cyclohexanol_O
+  cu_galacturonateH_complex
+  cu_galacturonate_anion_complex
+  cu_guaiacol_methoxyO
+  cu_guaiacol_pi
+  cu_meta_methoxyphenol_pi
+  cu_methanol
+  cu_para_methoxyphenol_phenolicO
+  cu_para_methoxyphenol_pi
+  cu_phenol_pi

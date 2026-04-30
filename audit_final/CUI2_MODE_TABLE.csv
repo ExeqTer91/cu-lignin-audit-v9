@@ -1,0 +1,9 @@
+complex_id,ligand,start_mode,final_mode,n_imag,normal_termination,cn_eff,mode_survival,cu_i_min_dist,cu_i_max_dist,min_cu_o_dist,i_cu_i_angle,notes
+cui2_h2o_anion,h2o,water-bound,2-coordinate,0,True,2.0,COLLAPSED,2.4701,2.4704,3.2868,174.03,
+cui2_methanol_anion,methanol,O-monodentate,2-coordinate,0,True,2.0,COLLAPSED,2.4672,2.4678,4.1952,179.28,
+cui2_phenol_O_anion,phenol,phenolic-O,2-coordinate,0,True,2.0,COLLAPSED,2.4643,2.4842,4.4751,178.82,
+cui2_phenol_pi_anion,phenol,pi,2-coordinate,0,True,2.0,COLLAPSED,2.457,2.4603,3.4515,171.39,
+cui2_guaiacol_phenolicO_anion,guaiacol,phenolic-O,2-coordinate,0,True,2.0,COLLAPSED,2.383,2.5156,3.2071,178.04,
+cui2_guaiacol_methoxyO_anion,guaiacol,methoxy-O,2-coordinate,0,True,2.0,COLLAPSED,2.4765,2.5042,3.0054,171.18,
+cui2_guaiacol_pi_anion,guaiacol,pi,2-coordinate,0,True,2.0,COLLAPSED,2.4779,2.4919,4.2343,174.34,
+cui2_guaiacol_bidentate_anion,guaiacol,bidentate,2+1 hemicoordinated,0,True,3.0,COLLAPSED_TO_2+1_HEMICOORDINATED,2.5515,2.5914,1.8467,154.5,

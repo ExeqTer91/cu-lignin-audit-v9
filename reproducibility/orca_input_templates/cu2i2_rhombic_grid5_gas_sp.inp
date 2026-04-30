@@ -1,0 +1,4 @@
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF Grid5 FinalGrid6
+%pal nprocs 16 end
+%maxcore 4000
+* xyzfile 0 1 cu2i2_rhombic.xyz

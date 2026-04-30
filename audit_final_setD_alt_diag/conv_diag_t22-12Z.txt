@@ -1,0 +1,63 @@
+=== Set D ALT diagnostic snapshot — t=22:12:37Z (~7h27m elapsed) ===
+
+Cycle counters (ORCA MaxIter in parens):
+  cui2_anion_startA  ncyc=59 / 69  scfconv=59 (10 cycles to MaxIter)
+  cui2_anion_startB  ncyc=49 / 69  scfconv=48 (20 cycles to MaxIter)
+  cu2i2_startA       ncyc=57 / 72  scfconv=56 (15 cycles to MaxIter)
+  cu2i2_startB       ncyc=45 / 72  scfconv=44 (27 cycles to MaxIter)
+
+All 4 ORCA processes alive, .out files actively being written.
+
+=== Per-species LAST geometry-convergence block (TightOpt tols) ===
+TolMaxG 1e-4, TolRMSG 3e-5, TolMaxD 1e-3, TolRMSD 6e-4, TolE 1e-6 Eh
+
+cu2i2_veratrole_methoxyO_startA (cycle 56):
+  max grad   7.77e-4  ratio=7.77x   (from 3.89e-4 at cyc51 — UP, Hessian-update or step rejection)
+  RMS grad   1.09e-4  ratio=3.64x   (from 9.33e-5 at cyc51 — UP)
+  max disp   2.55e-2  ratio=25.5x
+  RMS disp   7.09e-3  ratio=11.8x
+  ΔE         +1.45e-5 Eh  (+0.0091 kcal/mol — first positive dE; isolated bump, NOT oscillation)
+
+cu2i2_veratrole_methoxyO_startB (cycle 44):
+  max grad   1.55e-3  ratio=15.5x   (from 4.80e-3 at cyc40 — improving 3x)
+  RMS grad   3.20e-4  ratio=10.7x
+  max disp   2.57e-2  ratio=25.7x
+  RMS disp   6.05e-3  ratio=10.1x
+  ΔE         -1.78e-4 Eh  (-0.112 kcal/mol)
+
+cui2_veratrole_methoxyO_anion_startA (cycle 59):
+  max grad   3.60e-3  ratio=36.0x
+  RMS grad   6.15e-4  ratio=20.5x
+  max disp   1.23e-1  ratio=123x   (LARGE step — trust radius issue)
+  RMS disp   1.98e-2  ratio=33.1x
+  ΔE         -4.42e-4 Eh  (-0.278 kcal/mol — energy still descending steadily)
+  TREND: max grad oscillating in 2-5e-3 band over cycles 44-59 (16 cycles, modest improvement)
+         BUT energy descending (~0.2-0.3 kcal/mol per few cycles). Not pure stagnation.
+
+cui2_veratrole_methoxyO_anion_startB (cycle 48):
+  max grad   1.35e-3  ratio=13.5x  (from 3.06e-3 at cyc43 — improving 2.3x)
+  RMS grad   2.23e-4  ratio=7.44x
+  max disp   1.74e-2  ratio=17.4x
+  RMS disp   5.21e-3  ratio=8.69x
+  ΔE         -8.54e-5 Eh  (-0.054 kcal/mol)
+
+=== Cycle-by-cycle gradient trends (max gradient, Eh/Bohr) ===
+
+cu2i2_startA (this is the slowest converger):
+  cyc41:1.234e-3  cyc42:1.319e-3  cyc43:1.347e-3  cyc45:1.322e-3
+  cyc46:7.25e-4   cyc48:4.99e-4   cyc51:3.89e-4   cyc56:7.77e-4 (bump)
+  → Plateau broken cyc46, dropping 50%/cycle 46→51, then 1 bump at 56.
+  Energy still descending overall.
+
+cu2i2_startB:
+  cyc36:5.36e-3   cyc40:4.80e-3   cyc44:1.55e-3
+  → Steady improvement, halving over 4-cyc windows.
+
+cui2_anion_startA:
+  cyc44:4.69e-3   cyc49:2.01e-3   cyc53:4.21e-3   cyc59:3.60e-3
+  → Oscillating 2-4e-3; energy still descending.
+  → Watch carefully: only 10 cycles to MaxIter.
+
+cui2_anion_startB:
+  cyc40:4.48e-3   cyc43:3.06e-3   cyc48:1.35e-3
+  → Steady improvement.

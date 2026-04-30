@@ -1,0 +1,4 @@
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF Opt Freq
+%pal nprocs 16 end
+%maxcore 4000
+* xyzfile 0 1 veratrole_free_seed.xyz

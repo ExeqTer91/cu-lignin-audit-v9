@@ -1,0 +1,8 @@
+complex_id,ligand,final_mode,BE_static_gas_kcal,BE_static_smd_kcal,dE_vs_h2o_gas_kcal,dE_vs_h2o_smd_kcal,dE_vs_methanol_gas_kcal,dE_vs_methanol_smd_kcal,notes
+cu2i2_methanol,methanol,O-monodentate,-18.66,,0.84,,0.0,,
+cu2i2_phenol_O,phenol,O-monodentate,-16.48,,3.02,,2.18,,
+cu2i2_phenol_pi,phenol,detached,-16.73,,2.77,,1.93,,
+cu2i2_guaiacol_phenolicO,guaiacol,bidentate,-23.39,,-3.89,,-4.73,,
+cu2i2_guaiacol_methoxyO,guaiacol,O-monodentate,172.67,,192.16,,191.33,,
+cu2i2_guaiacol_pi,guaiacol,detached,-15.53,,3.96,,3.13,,
+cu2i2_guaiacol_bidentate,guaiacol,bidentate,-17.86,,1.63,,0.8,,

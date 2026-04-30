@@ -1,0 +1,8 @@
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF Grid5 FinalGrid6 CPCM(WATER)
+%pal nprocs 16 end
+%maxcore 4000
+%cpcm
+   smd true
+   SMDsolvent "water"
+end
+* xyzfile 0 1 cu2i2_veratrole_methoxyO_startA.xyz

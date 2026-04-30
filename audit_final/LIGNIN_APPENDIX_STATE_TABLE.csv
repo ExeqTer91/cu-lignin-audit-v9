@@ -1,0 +1,15 @@
+cu_state,lignin_functional_group,proxy_molecule,predominant_mode,BE_evidence_kcal,interpretive_note
+"Cu+ (naked, ref)",phenolic-OH,guaiacol,BIDENTATE_OR_PI,cu_guaiacol_phenolicO=-28.5; cu_guaiacol_pi=-62.2,Naked Cu+ exaggerates BEs; useful only as reference.
+CuI monomer,phenolic-OH,guaiacol,PHENOLIC_O,cui_guaiacol_phenolicO=-25.3 (true min),phenolic-O survives at CuI level; eq to methanol within 0.5 kcal/mol.
+CuI monomer,methoxy,guaiacol,METHOXY_O_WEAK,cui_guaiacol_methoxyO=-14.2 (true min),methoxy-O is a weaker O-donor on CuI.
+CuI monomer,arene,guaiacol,PI_TRUE_MIN,cui_guaiacol_pi=-29.0 (true min),Pi binds modestly; CuI compresses pi/O gap.
+Cu2I2 (rhombic),phenolic-OH,guaiacol,FRAGMENTS,cu2i2_guaiacol_phenolicO BE_gas=-23.4 BUT cluster fragments,phenolic-O on Cu2I2 cracks the cluster -- NOT productive.
+Cu2I2 (rhombic),methoxy,guaiacol,WEAK_OR_ARTIFACT,cu2i2_guaiacol_methoxyO BE_gas=+172.67 (artifact),Set C methoxy result is an artifact; use V2 veratrole instead.
+Cu2I2 (rhombic),arene,guaiacol,DETACHES,cu2i2_guaiacol_pi -> detached,Pi-only contacts on Cu2I2 do not survive optimization.
+Cu2I2 (rhombic),ortho-dimethoxy (etherified guaiacyl),veratrole,"BIDENTATE_K2_O,O","cu2i2_veratrole_methoxyO_startA: BE_gas=-26.82, BE_smd=-26.24, Cu-O 2.20/2.20 A, n_imag=0",PRIMARY V9 finding (Task #29). Productive bidentate site.
+Cu2I2 (rhombic),ortho-dimethoxy (rotamer),veratrole,METASTABLE_CONTACT,cu2i2_veratrole_methoxyO_startB: BE_eff=+28.07 kcal/mol (gas),Rotamer; positive BE; cluster topology matters for the productive mode.
+[CuI2]- (anion),phenolic-OH,guaiacol,DETACHED,cui2_guaiacol_phenolicO_anion BE=-5.4 + 2-coord [CuI2]- linear,[CuI2]- rejects ligands; linear iodide coordination saturates Cu.
+[CuI2]- (anion),methoxy,guaiacol,DETACHED,cui2_guaiacol_methoxyO_anion BE_gas=+173 (artifact),[CuI2]- rejects.
+[CuI2]- (anion),arene,guaiacol,DETACHED,cui2_guaiacol_pi_anion BE=-2.9,[CuI2]- rejects.
+[CuI2]- (anion),ortho-dimethoxy,veratrole,REJECTED_+48_TO_+55,cui2_veratrole_methoxyO_anion_startA/B: BE=+49/+55 kcal/mol,Iodide-saturated [CuI2]- rejects the bidentate motif (large bend penalty).
+Cu+ (naked),ortho-dihydroxy (catechol),catechol,BIDENTATE_TRUE_MIN,cu_catechol_bidentate=-33.4 (CONFIRMED_MIN_BOTH),"Positive control: ortho O,O bidentate is a true minimum on naked Cu+."

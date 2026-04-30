@@ -1,0 +1,64 @@
+GRID5_RERUN_PROVENANCE.txt — Post-hoc rerun of grid5_check.py
+================================================================
+
+Initial chain run: chain_v9_2.sh STEP 2 (grid5_check.py) executed 2026-04-28
+~15:26 UTC. The simple-input route line "! B3LYP D3BJ def2-TZVP RIJCOSX def2/J
+TightSCF Grid5 FinalGrid6 SP" was rejected by ORCA 6.1.1 with:
+
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         INPUT ERROR
+    UNRECOGNIZED OR DUPLICATED KEYWORD(S) IN SIMPLE INPUT LINE
+                        GRID5 FINALGRID6
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+(integer Grid keywords were removed from ORCA 6.x simple input; they remain
+parsable in the %method block for backward compatibility.)
+
+Cause: only the [CuI2]- reference SP (cui2_anion_grid5_sp.out, 13 kB,
+rc=4) was attempted before the script aborted at "FATAL: cannot compute
+reference grid shift". SET_AB_GRID_CHECK.csv was therefore never written
+in the original chain run, and EXPERIMENT_STATUS.txt v1 (2026-04-29
+00:24:27 UTC) flagged that deliverable as MISSING.
+
+Fix applied 2026-04-29 ~00:33 UTC on pod st5gizc7k3ilep:
+
+    - Edited /workspace/grid5_check.py to (a) drop "Grid5 FinalGrid6"
+      from the simple-input line, leaving
+      "! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF SP", and (b) inject
+      a %method / Grid 5 / FinalGrid 6 / end block in the input writer
+      after %maxcore. Backup at /workspace/grid5_check.py.bak on the
+      pod's persistent volume. Same edit re-applied to the local copy
+      ./grid5_check.py for git tracking.
+
+    - Removed the failed /workspace/results_grid5/cui2_anion_grid5_sp.out
+      (rc=4) and reran grid5_check.py. All 7 SPs (1 reference + 6 Set B
+      complexes with normal-terminated DefGrid3 geometries) completed
+      with rc=0 between 00:34 and 00:38 UTC.
+
+    - Reran postprocess_v9_2.py to refresh EXPERIMENT_STATUS.txt
+      (timestamp 2026-04-29 00:38 UTC), which now reports
+      SET_AB_GRID_CHECK.csv: OK (2,129 bytes).
+
+Resulting rows in SET_AB_GRID_CHECK.csv (all normal_termination=True):
+
+    cui2_h2o_anion              delta=-0.0168 kcal  grid_sensitive=False
+    cui2_methanol_anion         delta= 0.0218 kcal  grid_sensitive=False
+    cui2_phenol_O_anion         delta= 0.0037 kcal  grid_sensitive=False
+    cui2_phenol_pi_anion        delta=-0.0042 kcal  grid_sensitive=False
+    cui2_guaiacol_phenolicO_anion  delta=-0.0004 kcal  grid_sensitive=False
+    cui2_guaiacol_pi_anion         delta=-0.0112 kcal  grid_sensitive=False
+
+Reference grid shift (Grid5 - DefGrid3) = -0.0267 kcal/mol, applied to all
+rows (cancellation column). The 2 Set B anomaly anions
+(guaiacol_methoxyO, guaiacol_bidentate) are absent because they had
+FAILED_SCF_STATE in DefGrid3 and provided no valid geometry to re-evaluate.
+
+Caveat: Grid5 SP provenance rows were not appended to
+EXPERIMENT_RAW_PROVENANCE.csv (which captures only the original chain
+steps). The 7 .out files remain on the pod's persistent volume at
+/workspace/results_grid5/ (pod st5gizc7k3ilep is stopped/EXITED but the
+volume is preserved). To regenerate machine-readable provenance, restart
+the pod and rerun postprocess_v9_2.py with the grid5 .out files in scope.
+
+This file documents the post-hoc rerun for transparency. No manuscript
+prose; factual job status only.

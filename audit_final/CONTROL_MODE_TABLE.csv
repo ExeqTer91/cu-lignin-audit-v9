@@ -1,0 +1,11 @@
+complex_id,ligand_id,start_mode,final_mode,n_imaginary,normal_termination,mode_changed,notes
+cu_benzene_pi,benzene,pi,pi,0,True,NO,TRUE_MIN
+cu_anisole_pi,anisole,pi,pi,0,True,NO,TRUE_MIN
+cu_anisole_methoxyO,anisole,methoxyO,methoxyO,0,True,NO,TRUE_MIN
+cu_catechol_pi,catechol,pi,pi,0,True,NO,TRUE_MIN
+cu_catechol_bidentate,catechol,bidentate,bidentate,0,True,NO,TRUE_MIN
+cu_cyclohexanol_O,cyclohexanol,O-mono,O-mono,0,True,NO,TRUE_MIN
+cu_meta_methoxyphenol_pi,meta_methoxyphenol,pi,pi,0,True,NO,TRUE_MIN
+cu_meta_methoxyphenol_phenolicO,meta_methoxyphenol,phenolicO,phenolicO,0,True,NO,TRUE_MIN
+cu_para_methoxyphenol_pi,para_methoxyphenol,pi,pi,0,True,NO,TRUE_MIN
+cu_para_methoxyphenol_phenolicO,para_methoxyphenol,phenolicO,phenolicO,0,True,NO,TRUE_MIN

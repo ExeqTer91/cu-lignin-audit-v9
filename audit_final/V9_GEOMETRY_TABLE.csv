@@ -1,0 +1,56 @@
+species_id,cluster,ligand,final_mode,BE_gas_kcal,BE_smd_kcal,Cu_O_top_A,Cu_C_top_A,Cu_I_top_A,Cu_centroid_A,I_Cu_I_angle_deg,n_imag,lowest_freq_cm1,n_atoms,raw_out_path,sha256,true_minimum,notes
+cu_methanol,Cu+ (naked),methanol,see CLAIM_SUPPORT/MECH_VERDICT,-47.50,-23.63,1.925,3.056,,,,0,,,,,yes,Tier A naked-Cu+
+cu_phenol_O,Cu+ (naked),phenol_O,see CLAIM_SUPPORT/MECH_VERDICT,-51.44,-36.39,2.664,,,4.704,,0,,,,,yes,Tier A naked-Cu+
+cu_phenol_pi,Cu+ (naked),phenol_pi,see CLAIM_SUPPORT/MECH_VERDICT,-80.96,-52.20,4.444,2.072;2.442;2.446,,2.389,,0,,,,,yes,Tier A naked-Cu+
+cu_guaiacol_phenolicO,Cu+ (naked),guaiacol_phenolicO,see CLAIM_SUPPORT/MECH_VERDICT,-28.52,-8.00,2.536;4.141,,,4.289,,0,,,,,yes,Tier A naked-Cu+
+cu_guaiacol_methoxyO,Cu+ (naked),guaiacol_methoxyO,see CLAIM_SUPPORT/MECH_VERDICT,-54.48,-20.94,2.007;2.087,2.916;2.946;2.997,,3.429,,0,,,,,yes,Tier A naked-Cu+
+cu_guaiacol_pi,Cu+ (naked),guaiacol_pi,see CLAIM_SUPPORT/MECH_VERDICT,-62.17,-28.48,4.470;4.596,2.105;2.187;2.771,,2.474,,0,,,,,yes,Tier A naked-Cu+
+cu_galacturonateH_complex,Cu+ (naked),galacturonateH_complex,see CLAIM_SUPPORT/MECH_VERDICT,-50.10,-22.73,1.884;3.556;5.364,3.000,,,,0,,,,,yes,Tier A naked-Cu+
+cu_galacturonate_anion_complex,Cu+ (naked),galacturonate_anion_complex,see CLAIM_SUPPORT/MECH_VERDICT,-185.70,-37.91,2.083;2.093;4.630,2.377,,,,0,,,,,yes,Tier A naked-Cu+
+cu_anisole_pi,Cu+ (naked),anisole_pi,see CLAIM_SUPPORT/MECH_VERDICT,-60.15,-27.44,4.714,2.040;2.504;2.533,,2.540,,0,,17,/home/runner/workspace/results/tier_a/cu_anisole_pi.out,969df164a6bd579b819009375be6a82a45d3aa9cbc98e559b5f46dfccbc750de,yes,Tier A naked-Cu+
+cu_anisole_methoxyO,Cu+ (naked),anisole_methoxyO,see CLAIM_SUPPORT/MECH_VERDICT,-48.78,-20.54,1.934,2.828;2.866;3.034,,3.370,,0,,17,/home/runner/workspace/results/tier_a/cu_anisole_methoxyO.out,89592b6ace4bc73e7e2e231265cd9674fe49c07c67308572a460c386cf039dd1,yes,Tier A naked-Cu+
+cu_catechol_bidentate,Cu+ (naked),catechol_bidentate,see CLAIM_SUPPORT/MECH_VERDICT,-33.41,-15.64,1.925;3.221,3.135,,4.431,,0,,15,/home/runner/workspace/results/tier_a/cu_catechol_bidentate.out,796e3aa33da50d3b8a8cab70b1fed63e28f9e78a48cc132f8e9972d1162df08f,yes,Tier A naked-Cu+
+cu_catechol_pi,Cu+ (naked),catechol_pi,see CLAIM_SUPPORT/MECH_VERDICT,-59.78,-28.08,4.523;4.582,2.132;2.151;2.826,,2.480,,0,,15,/home/runner/workspace/results/tier_a/cu_catechol_pi.out,e2b8883d2956bf537a8e697482fadc863e00a25ac2de7578ffd8d57bba443090,yes,Tier A naked-Cu+
+cu_cyclohexanol_O,Cu+ (naked),cyclohexanol_O,see CLAIM_SUPPORT/MECH_VERDICT,-58.13,-27.24,1.949,2.747;2.858,,3.663,,0,,20,/home/runner/workspace/results/tier_a/cu_cyclohexanol_O.out,0d2cc0978d69d7dbaeb3842f124c6f50d4212082f81a14fb6135d1c515bcfea0,yes,Tier A naked-Cu+
+cu_benzene_pi,Cu+ (naked),benzene_pi,see CLAIM_SUPPORT/MECH_VERDICT,-54.44,-23.88,,2.400;2.400;2.400,,1.944,,0,,13,/home/runner/workspace/results/tier_a/cu_benzene_pi.out,07b39c1e4110241bc3a750f6d1fe6a68670bc1645c7a4a7cadd773422f4f7e74,yes,Tier A naked-Cu+
+cu_meta_methoxyphenol_pi,Cu+ (naked),meta_methoxyphenol_pi,see CLAIM_SUPPORT/MECH_VERDICT,-63.16,-27.53,3.301;4.951,2.025;2.562;2.696,,2.710,,0,,18,/home/runner/workspace/results/tier_a/cu_meta_methoxyphenol_pi.out,850648712b89272292219fa630f65ef21e70fcef0d694baa40ceb67ba2d7b9e9,yes,Tier A naked-Cu+
+cu_meta_methoxyphenol_phenolicO,Cu+ (naked),meta_methoxyphenol_phenolicO,see CLAIM_SUPPORT/MECH_VERDICT,-12.35,5.37,2.000;6.564,,,4.728,,0,,18,/home/runner/workspace/results/tier_a/cu_meta_methoxyphenol_phenolicO.out,c353057f79530965979903ab5d76057a34abbb91181db60a622fff4543214a69,yes,Tier A naked-Cu+
+cu_para_methoxyphenol_pi,Cu+ (naked),para_methoxyphenol_pi,see CLAIM_SUPPORT/MECH_VERDICT,-58.20,-26.32,3.722;3.774,2.111;2.132;2.859,,2.490,,0,,18,/home/runner/workspace/results/tier_a/cu_para_methoxyphenol_pi.out,754f30e146b26984809e0ef6d46ae55010f79e29f8a37d6bc682129b9b5eb576,yes,Tier A naked-Cu+
+cu_para_methoxyphenol_phenolicO,Cu+ (naked),para_methoxyphenol_phenolicO,see CLAIM_SUPPORT/MECH_VERDICT,-49.64,-19.32,1.923;6.738,2.951,,4.149,,0,,18,/home/runner/workspace/results/tier_a/cu_para_methoxyphenol_phenolicO.out,8ec7aba4154095ca33c3fcdbe35ae79ae23ff5492717ffa0bd23a3d55eed16a8,yes,Tier A naked-Cu+
+cu2i2_h2o,Cu2I2 (rhombic),h2o,O-monodentate,-19.5,-16.68,1.9732,,2.4697;3.657;2.4987;2.4726,,,0,,,,,yes,Set C Cu2I2
+cu2i2_methanol,Cu2I2 (rhombic),methanol,O-monodentate,-18.66,,2.0605,,2.6921;2.6513;2.5095;2.5134,,,0,,,,,yes,Set C Cu2I2
+cu2i2_phenol_O,Cu2I2 (rhombic),phenol,O-monodentate,-16.48,,2.0566,,2.7444;2.608;2.5072;2.5226,,,0,,,,,yes,Set C Cu2I2
+cu2i2_phenol_pi,Cu2I2 (rhombic),phenol,detached,-16.73,,4.7626,,2.7586;2.6957;2.4809;2.4969,,,0,,,,,yes,Set C Cu2I2
+cu2i2_guaiacol_phenolicO,Cu2I2 (rhombic),guaiacol,bidentate,-23.39,,2.0662;2.2289,,2.4818;4.087;2.5262;2.4678,,,0,,,,,yes,Set C Cu2I2
+cu2i2_guaiacol_methoxyO,Cu2I2 (rhombic),guaiacol,O-monodentate,172.67,,3.1397;2.1252,,2.7649;2.6525;2.5044;2.5047,,,0,,,,,yes,nonphysical/high-energy anomaly (BE_gas=+172.67 kcal/mol); SCF/optimization artifact; excluded from chemical interpretation
+cu2i2_guaiacol_pi,Cu2I2 (rhombic),guaiacol,detached,-15.53,,3.7472;4.5305,,2.6524;2.7752;2.5054;2.4927,2.5439,,0,,,,,yes,Set C Cu2I2
+cu2i2_guaiacol_bidentate,Cu2I2 (rhombic),guaiacol,bidentate,-17.86,,2.2207;2.2589,,2.651;2.8009;2.5037;2.5038,,,0,,,,,yes,Set C Cu2I2
+cui2_h2o_anion,[CuI2]-,h2o,2-coordinate,-10.43,-4.21,3.2868,,2.4704;2.4701,,174.03,0,,,,,yes,Set B [CuI2]-
+cui2_methanol_anion,[CuI2]-,methanol,2-coordinate,-7.83,,4.1952,,2.4672;2.4678,,179.28,0,,,,,yes,Set B [CuI2]-
+cui2_phenol_O_anion,[CuI2]-,phenol,2-coordinate,-11.56,,4.4751,,2.4643;2.4842,,178.82,0,,,,,yes,Set B [CuI2]-
+cui2_phenol_pi_anion,[CuI2]-,phenol,2-coordinate,-5.67,,3.4515,,2.457;2.4603,,171.39,0,,,,,yes,Set B [CuI2]-
+cui2_guaiacol_phenolicO_anion,[CuI2]-,guaiacol,2-coordinate,-5.37,,3.2071;5.4871,,2.5156;2.383,,178.04,0,,,,,yes,Set B [CuI2]-
+cui2_guaiacol_methoxyO_anion,[CuI2]-,guaiacol,2-coordinate,173.15,,4.4292;3.0054,,2.5042;2.4765,,171.18,0,,,,,yes,Set B [CuI2]-
+cui2_guaiacol_pi_anion,[CuI2]-,guaiacol,2-coordinate,-2.92,,4.2343;4.9269,,2.4919;2.4779,,174.34,0,,,,,yes,Set B [CuI2]-
+cui2_guaiacol_bidentate_anion,[CuI2]-,guaiacol,2+1 hemicoordinated,167.44,,3.1176;1.8467,,2.5914;2.5515,,154.5,0,,,,,yes,Set B [CuI2]-
+cui_monomer,CuI / Cu2I2 (Tier B),,reference,N/A (reference),,,,,,,0,,,,,yes,CuI monomer reference
+cui_methanol_O,CuI / Cu2I2 (Tier B),methanol,O-mono,-25.76,,,,,,,1,,,,,no,BORDERLINE_SADDLE (1 soft mode)
+cui_phenol_O,CuI / Cu2I2 (Tier B),phenol,phenolicO,-50.72,,,,,,,2,,,,,no,SADDLE (n_imag=2); BE is upper bound
+cui_phenol_pi,CuI / Cu2I2 (Tier B),phenol,pi,-56.69,,,,,,,0,,,,,yes,TRUE_MIN; CuI pi-preferred over O
+cui_guaiacol_ph,CuI / Cu2I2 (Tier B),guaiacol,phenolicO,-25.3,,,,,,,0,,,,,yes,TRUE_MIN
+cui_guaiacol_methoxyO,CuI / Cu2I2 (Tier B),guaiacol,methoxyO,-14.23,,,,,,,0,,,,,yes,TRUE_MIN; v9.1 job completed 2026-04-27
+cu2i2_rhombic,CuI / Cu2I2 (Tier B),,Cu2I2-rhombic,-51.9,,,,,,,0,,,,,yes,TRUE_MIN; dimerization BE vs 2xCuI_monomer
+cu2i2_linear,CuI / Cu2I2 (Tier B),,Cu2I2-linear,-16.37,,,,,,,2,,,,,no,SADDLE (n_imag=2); 35.5 kcal/mol less stable than rhombic
+cu2i2_linear_atom53,CuI / Cu2I2 (Tier B),,I-atom-ref,N/A (reference atom),,,,,,,0,,,,,yes,Single I-atom SP at Cu2I2_linear geometry; used for atom53 correction
+cu2i2_rhombic_atom53,CuI / Cu2I2 (Tier B),,I-atom-ref,N/A (reference atom),,,,,,,0,,,,,yes,Single I-atom SP at Cu2I2_rhombic geometry
+cui_monomer_atom53,CuI / Cu2I2 (Tier B),,Cu-atom-ref,N/A (reference atom),,,,,,,0,,,,,yes,Single Cu/I-atom SP at CuI_monomer geometry
+cui_methanol_O_atom53,CuI / Cu2I2 (Tier B),methanol,O-mono-atom-ref,N/A (reference atom),,,,,,,0,,,,,yes,Single atom SP; used for atom53 correction on CuI-methanol complex
+cui_phenol_O_atom53,CuI / Cu2I2 (Tier B),phenol,phenolicO-atom-ref,N/A (reference atom),,,,,,,0,,,,,yes,Single atom SP at CuI-phenol-O geometry
+cui_phenol_pi_atom53,CuI / Cu2I2 (Tier B),phenol,pi-atom-ref,N/A (reference atom),,,,,,,0,,,,,yes,Single atom SP at CuI-phenol-pi geometry
+cui_guaiacol_phenolicO_atom53,CuI / Cu2I2 (Tier B),guaiacol,phenolicO-atom-ref,N/A (reference atom),,,,,,,0,,,,,yes,Single atom SP at CuI-guaiacol geometry
+cu2i2_veratrole_methoxyO_startA,Cu2I2 (rhombic),veratrole,"kappa2-O,O bidentate",-26.82,-26.24,2.203;2.203;4.317,2.999;2.999;3.128,,,113.8;135.3,0,12.41,24,DATA_LOST_POD_WIPE 2026-04-30T11:02Z (.out gone; coords/freqs in setD_alt_v2_analysis.json),see audit_final_setD_alt_diag/setD_alt_v2_analysis.json,yes,Task #29 V2 follow-up; final coords archived in setD_alt_v2_analysis.json
+cu2i2_veratrole_methoxyO_startB,Cu2I2 (rhombic),veratrole,rotamer/contact,28.07,22.73,2.642;3.328;3.998,1.930;2.744;2.873,,,96.8;163.2,0,22.02,24,DATA_LOST_POD_WIPE 2026-04-30T11:02Z (.out gone; coords/freqs in setD_alt_v2_analysis.json),see audit_final_setD_alt_diag/setD_alt_v2_analysis.json,yes,Task #29 V2 follow-up; final coords archived in setD_alt_v2_analysis.json
+cui2_veratrole_methoxyO_anion_startA,[CuI2]-,veratrole,rotamer/contact,49.28,53.60,3.697;5.364,3.214;3.538;3.925,,,173.2,0,22.58,23,DATA_LOST_POD_WIPE 2026-04-30T11:02Z (.out gone; coords/freqs in setD_alt_v2_analysis.json),see audit_final_setD_alt_diag/setD_alt_v2_analysis.json,yes,Task #29 V2 follow-up; final coords archived in setD_alt_v2_analysis.json
+cui2_veratrole_methoxyO_anion_startB,[CuI2]-,veratrole,rotamer/contact,55.20,47.93,2.692;3.300,1.938;2.778;2.890,,,124.4,0,28.97,23,DATA_LOST_POD_WIPE 2026-04-30T11:02Z (.out gone; coords/freqs in setD_alt_v2_analysis.json),see audit_final_setD_alt_diag/setD_alt_v2_analysis.json,yes,Task #29 V2 follow-up; final coords archived in setD_alt_v2_analysis.json
+cu2i2_rhombic,Cu2I2,(reference),rhombic,,,,,,,,0,,,,,yes,No imaginary frequencies
+cu2i2_linear,Cu2I2,(reference),linear,,,,,,,,2,-66.63|-66.63,,,,no,2 imaginary modes

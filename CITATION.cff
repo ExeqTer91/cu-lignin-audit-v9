@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset, please cite both the dataset itself and the
+  associated manuscript.
+title: >-
+  Cu-Lignin DFT Audit Pipeline (v9): Mode-Selective CuI Anchoring on
+  Lignin-Inspired Fiber Interfaces
+type: dataset
+authors:
+  - given-names: Andrei
+    family-names: Ursachi
+    orcid: 'https://orcid.org/0009-0002-6114-5011'
+    email: contact@andreiursachi.eu
+    affiliation: Independent Researcher, Diepholz, Germany
+date-released: 2026-04-30
+version: v9.0
+license: CC-BY-4.0
+repository-code: 'https://github.com/ExeqTer91/cu-lignin-audit-v9'
+preferred-citation:
+  type: article
+  title: >-
+    Mode-Selective CuI Anchoring on Lignin-Inspired Fiber Interfaces:
+    A DFT Cluster-Model Study
+  authors:
+    - given-names: Andrei
+      family-names: Ursachi
+      orcid: 'https://orcid.org/0009-0002-6114-5011'
+  journal: ACS Sustainable Chemistry & Engineering
+  year: 2026
+  doi: '[to be inserted upon acceptance]'

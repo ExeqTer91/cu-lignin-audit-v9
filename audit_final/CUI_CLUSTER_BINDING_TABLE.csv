@@ -1,0 +1,16 @@
+complex_id,ligand_id,coord_mode,E_complex_gas_Eh,E_ligand_gas_Eh,E_cui_monomer_Eh,BE_gas_kcal_mol,n_imaginary,normal_termination,notes
+cui_monomer,,reference,-1938.215889,,,N/A (reference),0,True,CuI monomer reference
+cui_methanol_O,methanol,O-mono,-2053.969634,-115.712688,-1938.215889,-25.76,1,True,BORDERLINE_SADDLE (1 soft mode)
+cui_phenol_O,phenol,phenolicO,-2245.679584,-307.382867,-1938.215889,-50.72,2,True,SADDLE (n_imag=2); BE is upper bound
+cui_phenol_pi,phenol,pi,-2245.689103,-307.382867,-1938.215889,-56.69,0,True,TRUE_MIN; CuI pi-preferred over O
+cui_guaiacol_ph,guaiacol,phenolicO,-2360.204571,-421.948366,-1938.215889,-25.3,0,True,TRUE_MIN
+cui_guaiacol_methoxyO,guaiacol,methoxyO,-2360.186927497686,-421.948366,-1938.215889,-14.23,0,True,TRUE_MIN; v9.1 job completed 2026-04-27
+cu2i2_rhombic,,Cu2I2-rhombic,-3876.514481,,-1938.215889,-51.9,0,True,TRUE_MIN; dimerization BE vs 2xCuI_monomer
+cu2i2_linear,,Cu2I2-linear,-3876.457862,,-1938.215889,-16.37,2,True,SADDLE (n_imag=2); 35.5 kcal/mol less stable than rhombic
+cu2i2_linear_atom53,,I-atom-ref,-296.652290555973,,,N/A (reference atom),0,True,Single I-atom SP at Cu2I2_linear geometry; used for atom53 correction
+cu2i2_rhombic_atom53,,I-atom-ref,-296.652290555973,,,N/A (reference atom),0,True,Single I-atom SP at Cu2I2_rhombic geometry
+cui_monomer_atom53,,Cu-atom-ref,-296.652290555973,,,N/A (reference atom),0,True,Single Cu/I-atom SP at CuI_monomer geometry
+cui_methanol_O_atom53,methanol,O-mono-atom-ref,-296.652290555973,,,N/A (reference atom),0,True,Single atom SP; used for atom53 correction on CuI-methanol complex
+cui_phenol_O_atom53,phenol,phenolicO-atom-ref,-296.652290555973,,,N/A (reference atom),0,True,Single atom SP at CuI-phenol-O geometry
+cui_phenol_pi_atom53,phenol,pi-atom-ref,-296.652290555973,,,N/A (reference atom),0,True,Single atom SP at CuI-phenol-pi geometry
+cui_guaiacol_phenolicO_atom53,guaiacol,phenolicO-atom-ref,-296.652290555973,,,N/A (reference atom),0,True,Single atom SP at CuI-guaiacol geometry

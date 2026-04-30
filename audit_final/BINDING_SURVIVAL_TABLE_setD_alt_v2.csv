@@ -1,0 +1,5 @@
+species,set_id,Cu_O_distance_initial_A,Cu_O_distance_final_A,Cu_C_distance_final_A,n_o_bonded_lt_2.5A,final_mode_class,ligand_attached_yes_no,binding_class,BE_gas_kcal,BE_smd_kcal
+cu2i2_veratrole_methoxyO_startA,setD_alt_v2,2.203,2.203,2.999,2,bidentate_OMe_chelate,yes,BINDING,-26.82,-26.24
+cu2i2_veratrole_methoxyO_startB,setD_alt_v2,2.609,2.642,1.930,0,mono_OMe_with_pi_contact,yes,METASTABLE_CONTACT,+28.07,+22.73
+cui2_veratrole_methoxyO_anion_startA,setD_alt_v2,2.831,3.697,3.214,0,outer_sphere_pi_only,yes,METASTABLE_CONTACT,+49.28,+53.60
+cui2_veratrole_methoxyO_anion_startB,setD_alt_v2,2.676,2.692,1.938,0,mono_OMe_with_pi_contact,yes,METASTABLE_CONTACT,+55.20,+47.93

@@ -1,0 +1,164 @@
+==============================================================================
+SPECIES: cu2i2_veratrole_methoxyO_startA
+==============================================================================
+  size_bytes              : 2065347
+  geom_MaxIter_echo       : None
+  geom_MaxIter_section    : None
+  n_conv_blocks_seen      : 41
+  n_FSPE                  : 41
+  geom_OPT_DONE           : False
+  normal_term             : False
+  aborted                 : False
+  scf_failed              : False
+  freq_started            : False
+  freq_done               : False
+  --- last geom convergence block ---
+    Item                value                   Tolerance       Converged
+              ---------------------------------------------------------------------
+              Energy change      -0.0000314966            0.0000010000      NO
+              RMS gradient        0.0001326895            0.0000300000      NO
+              MAX gradient        0.0012340303            0.0001000000      NO
+              RMS step            0.0070888121            0.0006000000      NO
+              MAX step            0.0190415630            0.0010000000      NO
+              -------------------------------------------------------------------------
+  --- summary metrics (vs TightOpt tolerances) ---
+    max gradient          : value=+0.0012340  tol=1.00e-04  conv=NO  ratio=12.34x
+    RMS gradient          : value=+0.0001327  tol=3.00e-05  conv=NO  ratio=4.42x
+    max displacement      : value=+0.0190416  tol=1.00e-03  conv=NO  ratio=19.04x
+    RMS displacement      : value=+0.0070888  tol=6.00e-04  conv=NO  ratio=11.81x
+    energy change         : value=-0.0000315  tol=1.00e-06  conv=NO  ratio=31.50x
+  --- last 5 FSPE (Eh) ---
+    cyc[-5]: -4337.78421904
+    cyc[-4]: -4337.78427988
+    cyc[-3]: -4337.78428251
+    cyc[-2]: -4337.78436005
+    cyc[-1]: -4337.78439154
+  --- dE between consecutive last cycles (Eh -> kcal/mol) ---
+    step1: -2.7199130e-05 Eh  =  -0.01707 kcal/mol
+    step2: -6.0848487e-05 Eh  =  -0.03818 kcal/mol
+    step3: -2.6242587e-06 Eh  =  -0.00165 kcal/mol
+    step4: -7.7539110e-05 Eh  =  -0.04866 kcal/mol
+    step5: -3.1496629e-05 Eh  =  -0.01976 kcal/mol
+==============================================================================
+SPECIES: cu2i2_veratrole_methoxyO_startB
+==============================================================================
+  size_bytes              : 2038490
+  geom_MaxIter_echo       : None
+  geom_MaxIter_section    : None
+  n_conv_blocks_seen      : 31
+  n_FSPE                  : 31
+  geom_OPT_DONE           : False
+  normal_term             : False
+  aborted                 : False
+  scf_failed              : False
+  freq_started            : False
+  freq_done               : False
+  --- last geom convergence block ---
+    Item                value                   Tolerance       Converged
+              ---------------------------------------------------------------------
+              Energy change      -0.0028831171            0.0000010000      NO
+              RMS gradient        0.0012824053            0.0000300000      NO
+              MAX gradient        0.0063751633            0.0001000000      NO
+              RMS step            0.0240898367            0.0006000000      NO
+              MAX step            0.1214977056            0.0010000000      NO
+              -------------------------------------------------------------------------
+  --- summary metrics (vs TightOpt tolerances) ---
+    max gradient          : value=+0.0063752  tol=1.00e-04  conv=NO  ratio=63.75x
+    RMS gradient          : value=+0.0012824  tol=3.00e-05  conv=NO  ratio=42.75x
+    max displacement      : value=+0.1214977  tol=1.00e-03  conv=NO  ratio=121.50x
+    RMS displacement      : value=+0.0240898  tol=6.00e-04  conv=NO  ratio=40.15x
+    energy change         : value=-0.0028831  tol=1.00e-06  conv=NO  ratio=2883.12x
+  --- last 5 FSPE (Eh) ---
+    cyc[-5]: -4337.65574778
+    cyc[-4]: -4337.66204196
+    cyc[-3]: -4337.66565629
+    cyc[-2]: -4337.66828175
+    cyc[-1]: -4337.67116486
+  --- dE between consecutive last cycles (Eh -> kcal/mol) ---
+    step1: -6.9315763e-03 Eh  =  -4.34963 kcal/mol
+    step2: -6.2941820e-03 Eh  =  -3.94966 kcal/mol
+    step3: -3.6143339e-03 Eh  =  -2.26803 kcal/mol
+    step4: -2.6254532e-03 Eh  =  -1.64750 kcal/mol
+    step5: -2.8831171e-03 Eh  =  -1.80918 kcal/mol
+==============================================================================
+SPECIES: cui2_veratrole_methoxyO_anion_startA
+==============================================================================
+  size_bytes              : 2947278
+  geom_MaxIter_echo       : None
+  geom_MaxIter_section    : None
+  n_conv_blocks_seen      : 40
+  n_FSPE                  : 41
+  geom_OPT_DONE           : False
+  normal_term             : False
+  aborted                 : False
+  scf_failed              : False
+  freq_started            : False
+  freq_done               : False
+  --- last geom convergence block ---
+    Item                value                   Tolerance       Converged
+              ---------------------------------------------------------------------
+              Energy change      -0.0005146022            0.0000010000      NO
+              RMS gradient        0.0007254298            0.0000300000      NO
+              MAX gradient        0.0042991545            0.0001000000      NO
+              RMS step            0.0085548693            0.0006000000      NO
+              MAX step            0.0659300595            0.0010000000      NO
+              -------------------------------------------------------------------------
+  --- summary metrics (vs TightOpt tolerances) ---
+    max gradient          : value=+0.0042992  tol=1.00e-04  conv=NO  ratio=42.99x
+    RMS gradient          : value=+0.0007254  tol=3.00e-05  conv=NO  ratio=24.18x
+    max displacement      : value=+0.0659301  tol=1.00e-03  conv=NO  ratio=65.93x
+    RMS displacement      : value=+0.0085549  tol=6.00e-04  conv=NO  ratio=14.26x
+    energy change         : value=-0.0005146  tol=1.00e-06  conv=NO  ratio=514.60x
+  --- last 5 FSPE (Eh) ---
+    cyc[-5]: -2697.18380091
+    cyc[-4]: -2697.18514708
+    cyc[-3]: -2697.18597356
+    cyc[-2]: -2697.18648816
+    cyc[-1]: -2697.18690921
+  --- dE between consecutive last cycles (Eh -> kcal/mol) ---
+    step1: -1.7489318e-03 Eh  =  -1.09747 kcal/mol
+    step2: -1.3461730e-03 Eh  =  -0.84474 kcal/mol
+    step3: -8.2647773e-04 Eh  =  -0.51862 kcal/mol
+    step4: -5.1460215e-04 Eh  =  -0.32292 kcal/mol
+    step5: -4.2105025e-04 Eh  =  -0.26421 kcal/mol
+==============================================================================
+SPECIES: cui2_veratrole_methoxyO_anion_startB
+==============================================================================
+  size_bytes              : 2037561
+  geom_MaxIter_echo       : None
+  geom_MaxIter_section    : None
+  n_conv_blocks_seen      : 33
+  n_FSPE                  : 33
+  geom_OPT_DONE           : False
+  normal_term             : False
+  aborted                 : False
+  scf_failed              : False
+  freq_started            : False
+  freq_done               : False
+  --- last geom convergence block ---
+    Item                value                   Tolerance       Converged
+              ---------------------------------------------------------------------
+              Energy change      -0.0031258245            0.0000010000      NO
+              RMS gradient        0.0012531432            0.0000300000      NO
+              MAX gradient        0.0078621562            0.0001000000      NO
+              RMS step            0.0154393829            0.0006000000      NO
+              MAX step            0.0565701232            0.0010000000      NO
+              -------------------------------------------------------------------------
+  --- summary metrics (vs TightOpt tolerances) ---
+    max gradient          : value=+0.0078622  tol=1.00e-04  conv=NO  ratio=78.62x
+    RMS gradient          : value=+0.0012531  tol=3.00e-05  conv=NO  ratio=41.77x
+    max displacement      : value=+0.0565701  tol=1.00e-03  conv=NO  ratio=56.57x
+    RMS displacement      : value=+0.0154394  tol=6.00e-04  conv=NO  ratio=25.73x
+    energy change         : value=-0.0031258  tol=1.00e-06  conv=NO  ratio=3125.82x
+  --- last 5 FSPE (Eh) ---
+    cyc[-5]: -2697.22236020
+    cyc[-4]: -2697.22761861
+    cyc[-3]: -2697.23396068
+    cyc[-2]: -2697.23952965
+    cyc[-1]: -2697.24265548
+  --- dE between consecutive last cycles (Eh -> kcal/mol) ---
+    step1: -5.8171606e-03 Eh  =  -3.65032 kcal/mol
+    step2: -5.2584032e-03 Eh  =  -3.29970 kcal/mol
+    step3: -6.3420686e-03 Eh  =  -3.97971 kcal/mol
+    step4: -5.5689775e-03 Eh  =  -3.49459 kcal/mol
+    step5: -3.1258245e-03 Eh  =  -1.96148 kcal/mol

@@ -1,0 +1,9 @@
+complex_id,ligand,start_mode,final_mode,n_imag,normal_termination,cn_eff,mode_survival,cu_cu_dist,cu_i_min_dist,cu_i_max_dist,min_cu_o_dist,cu_centroid_dist,cluster_fragmented,notes
+cu2i2_h2o,h2o,water-bound,O-monodentate,0,True,2.0,SURVIVED,2.5103,2.4697,3.657,1.9732,,False,
+cu2i2_methanol,methanol,O-monodentate,O-monodentate,0,True,3.0,SURVIVED,2.4589,2.5095,2.6921,2.0605,,False,
+cu2i2_phenol_O,phenol,phenolic-O,O-monodentate,0,True,3.0,SURVIVED,2.4573,2.5072,2.7444,2.0566,,False,
+cu2i2_phenol_pi,phenol,pi,detached,0,True,2.0,COLLAPSED_TO_DETACHED,2.4485,2.4809,2.7586,4.7626,,False,
+cu2i2_guaiacol_phenolicO,guaiacol,phenolic-O,bidentate,0,True,2.7,COLLAPSED_TO_BIDENTATE,2.5862,2.4678,4.087,2.0662,,True,
+cu2i2_guaiacol_methoxyO,guaiacol,methoxy-O,O-monodentate,0,True,2.7,SURVIVED,2.4586,2.5044,2.7649,2.1252,,False,
+cu2i2_guaiacol_pi,guaiacol,pi,detached,0,True,2.0,COLLAPSED_TO_DETACHED,2.4735,2.4927,2.7752,3.7472,2.5439,False,
+cu2i2_guaiacol_bidentate,guaiacol,bidentate,bidentate,0,True,2.4,SURVIVED,2.4543,2.5037,2.8009,2.2207,,False,

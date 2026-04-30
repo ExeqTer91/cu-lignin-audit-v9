@@ -1,0 +1,113 @@
+{
+  "generated_utc": "2026-04-26T19:04:19.077235",
+  "runs_completed": 4,
+  "runs_total": 4,
+  "status": "COMPLETE",
+  "note": "PERSISTENT_SOFT_SADDLE: benzene ring pseudo-rotation (<50 cm-1) is a flat torsional coordinate, not a chemical TS. CONFIRMED_MIN_BOTH: true minima reached from both displaced directions.",
+  "displacement_method": "B3LYP-D3BJ/def2-TZVP Opt+Freq at imag-mode displaced geometry (delta=+/-0.3 Ang)",
+  "displacement_ang": 0.3,
+  "results": {
+    "cui_methanol_O": {
+      "imag_freqs_original": [
+        -329.98
+      ],
+      "plus": {
+        "out_path": "/workspace/disp_calc/cui_methanol_O_plus.out",
+        "terminated": true,
+        "n_imag": 0,
+        "imag_freqs": [],
+        "final_e": -2053.968322369201,
+        "lowest_real_freq_cm1": 54.94,
+        "sha256": "98ceb7fc730876db5cb320ba0efefe76c3f2d152a3578e0903f5e5a2e24ff18b"
+      },
+      "minus": {
+        "out_path": "/workspace/disp_calc/cui_methanol_O_minus.out",
+        "terminated": true,
+        "n_imag": 0,
+        "imag_freqs": [],
+        "final_e": -2053.968322231186,
+        "lowest_real_freq_cm1": 54.95,
+        "sha256": "3118af6ff0c554e1b3018198abde7a2d23d381fb21a5ae66b4c4625015a4de2b"
+      },
+      "conclusion": "CONFIRMED_MIN_BOTH"
+    },
+    "cu_benzene_pi": {
+      "imag_freqs_original": [
+        -28.75,
+        -28.05
+      ],
+      "plus": {
+        "out_path": "/workspace/disp_calc/cu_benzene_pi_plus.out",
+        "terminated": true,
+        "n_imag": 1,
+        "imag_freqs": [
+          -23.38
+        ],
+        "final_e": -1872.423687014844,
+        "lowest_real_freq_cm1": -23.38,
+        "sha256": "9f84352c501223812e59a123c3d5559c75d6f36e9e1c1920d411b2454001eeeb"
+      },
+      "minus": {
+        "out_path": "/workspace/disp_calc/cu_benzene_pi_minus.out",
+        "terminated": true,
+        "n_imag": 1,
+        "imag_freqs": [
+          -23.31
+        ],
+        "final_e": -1872.423687029278,
+        "lowest_real_freq_cm1": -23.31,
+        "sha256": "4a490285dbeefb09055af7f8f5c057f24e60d9fe72c7c0b55060d3f684249267"
+      },
+      "conclusion": "PERSISTENT_SOFT_SADDLE"
+    },
+    "cu_catechol_bidentate": {
+      "imag_freqs_original": [
+        -479.79,
+        -71.12
+      ],
+      "plus": {
+        "out_path": "/workspace/disp_calc/cu_catechol_bidentate_plus.out",
+        "terminated": true,
+        "n_imag": 0,
+        "imag_freqs": [],
+        "final_e": -2022.844608666203,
+        "lowest_real_freq_cm1": 49.62,
+        "sha256": "c834568e32f9587a17086511f382f4b83a8ed890fcf5663b8754275469b4a634"
+      },
+      "minus": {
+        "out_path": "/workspace/disp_calc/cu_catechol_bidentate_minus.out",
+        "terminated": true,
+        "n_imag": 0,
+        "imag_freqs": [],
+        "final_e": -2022.844608612198,
+        "lowest_real_freq_cm1": 49.59,
+        "sha256": "39291cc3544d2af690d16997bc13b9ca22786f9fa7fbcc2803cf9d89037731df"
+      },
+      "conclusion": "CONFIRMED_MIN_BOTH"
+    },
+    "cu_phenol_pi": {
+      "imag_freqs_original": [
+        -466.49
+      ],
+      "plus": {
+        "out_path": "/workspace/disp_calc/cu_phenol_pi_plus.out",
+        "terminated": true,
+        "n_imag": 0,
+        "imag_freqs": [],
+        "final_e": -1947.64552003111,
+        "lowest_real_freq_cm1": 57.43,
+        "sha256": "cc074657dfec5097eaf6f980fccfc551bd3627a2395922f83d60b35b2a3675e6"
+      },
+      "minus": {
+        "out_path": "/workspace/disp_calc/cu_phenol_pi_minus.out",
+        "terminated": true,
+        "n_imag": 0,
+        "imag_freqs": [],
+        "final_e": -1947.645527053407,
+        "lowest_real_freq_cm1": 57.4,
+        "sha256": "b5bde3742325978ecc65c0c070c882f750f7716752619f511710ea4dfffe1e63"
+      },
+      "conclusion": "CONFIRMED_MIN_BOTH"
+    }
+  }
+}

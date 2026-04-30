@@ -1,0 +1,6 @@
+mode,Cu+ (naked),CuI monomer,Cu2I2 (rhombic),[CuI2]- (anion)
+phenolic-O,"BE_gas=-28.5 (true min, but pi=-62.2 dominates)",BE_gas=-25.30 (true min),FRAGMENTS (cluster cracks),DETACHES (BE=-5.4)
+methoxy-O,"BE_gas=-54.5 (true min, on guaiacol)","BE_gas=-14.2 (true min, weakest O-donor)",Set C nonphysical artifact; V2 veratrole rotamer BE=+28 (metastable),Set C nonphysical artifact; V2 veratrole BE=+49 to +55 (rejected)
+pi,BE_gas=-62.2 (true min on guaiacol; -56.7 on phenol),BE_gas=-29.0 (true min on guaiacol),DETACHES on phenol/guaiacol,DETACHES (BE=-5 to +5 range)
+"kappa2-O,O bidentate (etherified)",(not the relevant Cu state for this motif),(not computed; not relevant to manuscript thesis),"**BE_gas=-26.82, BE_smd=-26.24, Cu-O 2.20/2.20 A; PRIMARY V9 PRODUCTIVE SITE (Task #29)**",REJECTED (+49 to +55 kcal/mol; iodide saturation prevents the geometry)
+ortho-dihydroxy bidentate (catechol),BE_gas=-33.4 (CONFIRMED_MIN_BOTH; true min),(not computed),(not computed; out-of-scope for this thesis),(not computed)

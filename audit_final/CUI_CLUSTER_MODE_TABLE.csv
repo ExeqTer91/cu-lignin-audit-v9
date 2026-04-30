@@ -1,0 +1,8 @@
+complex_id,ligand_id,start_mode,final_mode,n_imaginary,normal_termination,notes
+cui_monomer,,N/A,N/A,0,True,TRUE_MIN
+cui_methanol_O,methanol,O-mono,O-mono,0,True,TRUE_MIN
+cui_phenol_O,phenol,phenolicO,phenolicO,0,True,TRUE_MIN
+cui_phenol_pi,phenol,pi,pi,0,True,TRUE_MIN
+cui_guaiacol_ph,guaiacol,phenolicO,phenolicO,0,True,TRUE_MIN
+cu2i2_linear,,Cu2I2-linear,Cu2I2-linear,0,True,TRUE_MIN
+cu2i2_rhombic,,Cu2I2-rhombic,Cu2I2-rhombic,0,True,TRUE_MIN

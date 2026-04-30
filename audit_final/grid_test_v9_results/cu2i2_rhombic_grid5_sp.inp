@@ -1,0 +1,16 @@
+! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF SP
+
+%pal nprocs 4 end
+%maxcore 8000
+
+%method
+  Grid 5
+  FinalGrid 6
+end
+
+* xyz 0 1
+  Cu    -1.232878   -0.000000    0.000000
+  Cu     1.232876   -0.000000    0.000000
+  I      0.000001    2.252402   -0.000000
+  I      0.000001   -2.252401   -0.000000
+*

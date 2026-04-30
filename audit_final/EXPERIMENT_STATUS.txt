@@ -1,0 +1,103 @@
+EXPERIMENT_STATUS.txt — Sets A/B/C Computational Audit (v9.2)
+Generated: 2026-04-29T00:38:22.144697+00:00
+
+======================================================================
+Set A  (single-cluster references): COMPLETE
+  Cu+, [CuI]0, [CuI2]−, Cu2I2 rhombic, Cu2I2·H2O, H2O, methanol
+
+Set B  ([CuI2]− binding series, 2+1 hemicoordinated):
+  rows in CUI2_BINDING_TABLE.csv: 8
+  rerun anomalies processed:        2
+    cui2_guaiacol_methoxyO_anion                   status=FAILED_SCF_STATE  best_attempt=NONE  BE_gas=
+    cui2_guaiacol_bidentate_anion                  status=FAILED_SCF_STATE  best_attempt=NONE  BE_gas=
+
+Grid5 FinalGrid6 consistency check (Set A/B):
+  rows in SET_AB_GRID_CHECK.csv: 6 evaluable (6/8: 2 Set B anomaly anions excluded — see CUI2_RERUN_ANOMALIES.csv, FAILED_SCF_STATE)
+  grid-sensitive (|ΔBE|>1 kcal/mol): 0 / 6
+    cui2_h2o_anion                                 ΔBE = -0.0168 kcal  [stable]
+    cui2_methanol_anion                            ΔBE = 0.0218 kcal  [stable]
+    cui2_phenol_O_anion                            ΔBE = 0.0037 kcal  [stable]
+    cui2_phenol_pi_anion                           ΔBE = -0.0042 kcal  [stable]
+    cui2_guaiacol_phenolicO_anion                  ΔBE = -0.0004 kcal  [stable]
+    cui2_guaiacol_pi_anion                         ΔBE = -0.0112 kcal  [stable]
+
+Set C  (Cu2I2 binding series): 8 rows
+    cu2i2_h2o                            mode=O-monodentate         BE_gas=-19.5  imag=0
+    cu2i2_methanol                       mode=O-monodentate         BE_gas=-18.66  imag=0
+    cu2i2_phenol_O                       mode=O-monodentate         BE_gas=-16.48  imag=0
+    cu2i2_phenol_pi                      mode=detached              BE_gas=-16.73  imag=0
+    cu2i2_guaiacol_phenolicO             mode=bidentate             BE_gas=-23.39  imag=0
+    cu2i2_guaiacol_methoxyO              mode=O-monodentate         BE_gas=172.67  imag=0
+    cu2i2_guaiacol_pi                    mode=detached              BE_gas=-15.53  imag=0
+    cu2i2_guaiacol_bidentate             mode=bidentate             BE_gas=-17.86  imag=0
+
+Rank reversal between [CuI2]− and Cu2I2 (best mode per ligand):
+    guaiacol    B_rank=4  C_rank=1  ΔBE(C-B)=-18.02 kcal  rank_changed=True
+    h2o         B_rank=2  C_rank=2  ΔBE(C-B)=-9.07 kcal  rank_changed=False
+    methanol    B_rank=3  C_rank=3  ΔBE(C-B)=-10.83 kcal  rank_changed=False
+    phenol      B_rank=1  C_rank=4  ΔBE(C-B)=-5.17 kcal  rank_changed=True
+
+Deliverable files:
+  CUI2_BINDING_TABLE.csv: OK (2,069 bytes)
+  CUI2_MODE_TABLE.csv: OK (1,013 bytes)
+  LIGAND_EXCHANGE_ENERGIES.csv: OK (649 bytes)
+  CUI2_RERUN_ANOMALIES.csv: OK (827 bytes)
+  SET_AB_GRID_CHECK.csv: OK (2,129 bytes)
+  CU2I2_BINDING_TABLE.csv: OK (2,272 bytes)
+  CU2I2_MODE_TABLE.csv: OK (1,061 bytes)
+  CU2I2_EXCHANGE_TABLE.csv: OK (595 bytes)
+  BINDING_SURVIVAL_TABLE.csv: OK (2,856 bytes)
+  BINDING_SURVIVAL_SUMMARY.txt: OK (1,098 bytes)
+  RANK_REVERSAL_TABLE.csv: OK (531 bytes)
+  EXPERIMENT_JOB_INDEX.csv: OK (16,134 bytes)
+  EXPERIMENT_RAW_PROVENANCE.csv: OK (24,175 bytes)
+
+No manuscript discussion. Factual job status only.
+OXIDE AGING REGIME (Level 6 — documentation-only, appended 2026-04-30 UTC)
+--------------------------------------------------------------------------
+Cu retention is not one mechanism. It is a state-dependent anchoring ensemble:
+CuI-rich states favor mode-selective O / pi / iodide-cluster interactions,
+while oxide-aged states likely shift toward heteroatom / O-donor anchoring.
+Cu2O / Cu(OH)2 / CuO surface adsorption is OUT_OF_SCOPE for this audit and
+is recorded as a literature-backed limitation only — no new ORCA, no Cu(II),
+no Cu2O / CuO / Cu(OH)2 DFT, and no periodic-DFT surface-slab work was added
+for Level 6. See audit_final/OXIDE_AGING_REGIME_NOTE.md and §14 of
+audit_final/MANUSCRIPT_IMPACT_v8_to_v9.md. No quantitative job status,
+mode tag, or binding-survival classification above is changed by this footer.
+
+
+==============================================================================
+Task #29 — veratrole methoxy-O alternate starts — V2 RESTART (2026-04-30)
+==============================================================================
+Pod: rbqua6cf61ki73 @ 154.54.102.26:10598 (orca-dft-v9-migration)
+Level: B3LYP-D3BJ/def2-TZVP RIJCOSX def2/J TightSCF TightOpt DefGrid3
+         + %geom MaxIter 200 Trust 0.1 + %scf MaxIter 200
+SMD: B3LYP-D3BJ/def2-TZVP RIJCOSX def2/J TightSCF DefGrid3 SP, CPCM(SMD,water)
+
+v2 opt+freq launched 2026-04-30T02:50:26Z  (NO_TIMEOUT orchestrator)
+v2 opt+freq all 4 finished by  2026-04-30T09:23:48Z  (~6h 33m wall)
+v2 SMD-SPs    launched 2026-04-30T09:43:19Z  (manual sequential — orchestrator
+                                              had false-negative HURRAY-string bug;
+                                              see audit_final_setD_alt_diag/INCIDENT_t09-24Z_orchestrator_HURRAY_false_BAD.md)
+v2 SMD-SPs    all 4 finished by  2026-04-30T09:49:21Z  (~6m wall, sequential)
+
+5-gate validation (TERM_NORMALLY ∧ HURRAY ∧ FINAL_E ∧ VIB_BLOCK ∧ n_imag=0):
+  cu2i2_veratrole_methoxyO_startA                     5/5=True  n_imag=0  lowest_cm-1=12.4
+  cu2i2_veratrole_methoxyO_startB                     5/5=True  n_imag=0  lowest_cm-1=22.0
+  cui2_veratrole_methoxyO_anion_startA                5/5=True  n_imag=0  lowest_cm-1=22.6
+  cui2_veratrole_methoxyO_anion_startB                5/5=True  n_imag=0  lowest_cm-1=29.0
+
+BE summary (gas, SMD; kcal/mol):
+  cu2i2_veratrole_methoxyO_startA                     BE_gas=  -26.82  BE_smd=  -26.24  class=BINDING
+  cu2i2_veratrole_methoxyO_startB                     BE_gas=  +28.07  BE_smd=  +22.73  class=METASTABLE_CONTACT
+  cui2_veratrole_methoxyO_anion_startA                BE_gas=  +49.28  BE_smd=  +53.60  class=METASTABLE_CONTACT
+  cui2_veratrole_methoxyO_anion_startB                BE_gas=  +55.20  BE_smd=  +47.93  class=METASTABLE_CONTACT
+
+References (Set A/D ORCA 6.1.1 DefGrid3, sha256-pedigreed in EXPERIMENT_RAW_PROVENANCE.csv):
+  cu2i2_rhombic    E_gas=-3876.514404  E_smd=-3876.522610
+  cui2_anion       E_gas=-2236.113332  E_smd=-2236.178759
+  veratrole_free   E_gas= -461.227849  E_smd= -461.229817
+
+Phase 2 (high-grid Grid 6 / FinalGrid 7 sensitivity SPs): NOT RUN — deferred per
+  user instruction 2026-04-30T~10:00Z (DefGrid3 accepted as final-table values).
+  GRID_SENSITIVITY_STATUS.csv records all 4 species as NOT_RUN_TIME_BUDGET_PHASE3_OPTIONAL.

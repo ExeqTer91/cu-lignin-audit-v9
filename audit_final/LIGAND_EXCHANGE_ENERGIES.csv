@@ -1,0 +1,8 @@
+complex_id,ligand,final_mode,BE_static_gas_kcal,BE_static_smd_kcal,dE_vs_h2o_gas_kcal,dE_vs_h2o_smd_kcal,dE_vs_methanol_gas_kcal,dE_vs_methanol_smd_kcal,notes
+cui2_methanol_anion,methanol,2-coordinate,-7.83,,2.6,,-0.0,,
+cui2_phenol_O_anion,phenol,2-coordinate,-11.56,,-1.13,,-3.74,,
+cui2_phenol_pi_anion,phenol,2-coordinate,-5.67,,4.76,,2.16,,
+cui2_guaiacol_phenolicO_anion,guaiacol,2-coordinate,-5.37,,5.06,,2.46,,
+cui2_guaiacol_methoxyO_anion,guaiacol,2-coordinate,173.15,,183.58,,180.98,,
+cui2_guaiacol_pi_anion,guaiacol,2-coordinate,-2.92,,7.51,,4.91,,
+cui2_guaiacol_bidentate_anion,guaiacol,2+1 hemicoordinated,167.44,,177.87,,175.27,,

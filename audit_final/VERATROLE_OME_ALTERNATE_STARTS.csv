@@ -1,0 +1,5 @@
+job_id,restart_id,opt_converged,cycles,final_energy_Eh,freq_done,n_imag,lowest_freq_cm1,smd_done,smd_energy_Eh,BE_gas_kcal,BE_smd_kcal,final_mode,binding_class,valid_for_final_csv
+cu2i2_veratrole_methoxyO_startA,v2_DefGrid3_TightOpt_MaxIter200_Trust0.1,yes,1,-4337.784991,yes,0,12.41,yes,-4337.794239,-26.82,-26.24,bidentate_OMe_chelate,BINDING,yes
+cu2i2_veratrole_methoxyO_startB,v2_DefGrid3_TightOpt_MaxIter200_Trust0.1,yes,66,-4337.697513,yes,0,22.02,yes,-4337.716202,+28.07,+22.73,mono_OMe_with_pi_contact,METASTABLE_CONTACT,yes
+cui2_veratrole_methoxyO_anion_startA,v2_DefGrid3_TightOpt_MaxIter200_Trust0.1,yes,102,-2697.262646,yes,0,22.58,yes,-2697.323152,+49.28,+53.60,outer_sphere_pi_only,METASTABLE_CONTACT,yes
+cui2_veratrole_methoxyO_anion_startB,v2_DefGrid3_TightOpt_MaxIter200_Trust0.1,yes,20,-2697.253213,yes,0,28.97,yes,-2697.332202,+55.20,+47.93,mono_OMe_with_pi_contact,METASTABLE_CONTACT,yes

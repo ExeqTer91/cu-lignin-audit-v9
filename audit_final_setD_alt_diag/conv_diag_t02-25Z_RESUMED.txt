@@ -1,0 +1,85 @@
+================================================================
+Set D ALT — convergence diagnosis at 02:25Z (fresh-session resume)
+================================================================
+SOURCE: /root/orca_calc_setD_alt/logs/*_opt_freq.out on RunPod (154.54.102.26:10598)
+ORCA: 6.1.1; method: B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF TightOpt DefGrid3
+INPUT MaxIter: cu2i2=72, cui2=69 (per original spec)
+FINISHED: ~00:01..00:36 UTC; v2 finalizer fired 00:41 but its check was insufficient.
+
+VERDICT: ALL 4 JOBS HIT MAXITER. Optimization NOT converged.
+         Frequency block NEVER ran (vib=0 across the board).
+         CSV produced by v2 finalizer is INVALID and was quarantined under
+         /workspace/audit_final/QUARANTINE_t02-25Z/INVALID_PARTIAL_*.
+
+WHY V2 FINALIZER FAILED:
+  v2 grepped only "ORCA TERMINATED NORMALLY" + a MaxIter regex that did NOT
+  match the form ORCA 6.1.1 actually emits when MaxIter is hit at the end of
+  the geom-relax stage. ORCA in this case prints the unfulfilled
+  "Tolerances satisfied?" table, skips the freq block, and TERMINATES NORMALLY
+  (clean exit, no HURRAY, no explicit "MAXIMUM NUMBER" line).
+  → Detection MUST require BOTH "ORCA TERMINATED NORMALLY" AND
+    "HURRAY THE OPTIMIZATION HAS CONVERGED" AND VIBRATIONAL_FREQUENCIES block.
+
+PER-JOB STATE (last opt-cycle "Tolerances satisfied?" table):
+
+cu2i2_veratrole_methoxyO_startA  (72/72 cyc) ────────────────
+  E change       6.03e-6   (tol 1.0e-6)  NO  (off by 6x)
+  RMS gradient   7.25e-6   (tol 3.0e-5)  YES
+  MAX gradient   4.88e-5   (tol 1.0e-4)  YES
+  RMS step       7.81e-4   (tol 6.0e-4)  NO  (off by 1.3x)
+  MAX step       3.03e-3   (tol 1.0e-3)  NO  (off by 3x)
+  → Final E (last cycle):  -4337.78498834 Eh
+  → DIAGNOSIS: gradient excellent; bouncing in step direction (soft mode).
+              Should converge in <20 more cycles with Grid5/FinalGrid6.
+
+cu2i2_veratrole_methoxyO_startB  (72/72 cyc) ────────────────
+  E change       1.13e-4   NO
+  RMS gradient   5.47e-4   NO
+  MAX gradient   2.92e-3   NO
+  RMS step       1.58e-2   NO
+  MAX step       6.46e-2   NO
+  → Final E:  -4337.68964573 Eh
+  → DIAGNOSIS: still descending nontrivially. 60-eV-equivalent looser
+              than startA. May reach a different basin (tilted approach).
+              Needs many more cycles.
+
+cui2_veratrole_methoxyO_anion_startA  (69/69 cyc) ───────────
+  E change       5.32e-4   NO
+  RMS gradient   7.48e-4   NO
+  MAX gradient   5.84e-3   NO
+  RMS step       1.70e-2   NO
+  MAX step       1.247e-1  NO  (0.125 Angstrom — large!)
+  → Final E:  -2697.20254055 Eh
+  → DIAGNOSIS: geometry STILL MOVING substantially — possibly migrating
+              between binding modes (long Cu–O may be detaching, or methoxy
+              swinging). Needs MaxIter 150-200 + Grid5/FinalGrid6.
+
+cui2_veratrole_methoxyO_anion_startB  (69/69 cyc) ───────────
+  E change       6.80e-6   NO  (off by 7x)
+  RMS gradient   9.41e-5   NO  (off by 3x)
+  MAX gradient   5.30e-4   NO  (off by 5x)
+  RMS step       1.59e-3   NO  (off by 2.6x)
+  MAX step       6.89e-3   NO  (off by 6.9x)
+  → Final E:  -2697.25282510 Eh
+  → DIAGNOSIS: moderately close. ~20-40 more cycles likely sufficient.
+
+ENERGETIC NOTE (DO NOT USE FOR BES):
+  The cui2_startB final E (-2697.25283) is ~32 kcal/mol BELOW cui2_startA
+  (-2697.20254), which is a huge gap suggesting the two starts are NOT
+  drifting toward the same minimum. This reinforces that BEs from these
+  partial geoms are scientifically meaningless; we must let them fully relax.
+
+DECISION (RESTART, per user protocol):
+  - Extract last "CARTESIAN COORDINATES (ANGSTROEM)" block from each .out.
+  - Build fresh .inp files (different basename to avoid stale .gbw auto-load).
+  - Archive old .gbw, .opt, .engrad, .densities to a SUBDIR (do NOT delete).
+  - Method tag: ! B3LYP D3BJ def2-TZVP RIJCOSX def2/J TightSCF TightOpt
+                Grid5 FinalGrid6 Opt Freq
+    + %geom MaxIter 200 end
+    + %scf MaxIter 200 end (current scfconv is fine; this is just safety)
+    + Preserve charge/mult per species (cui2_anion: -1/1; cu2i2: 0/1)
+    + 24 MPI / 5000 maxcore as before
+  - Re-quarantine the 4 SMD-SP outputs (they were run on UNCONVERGED geoms
+    by the wrappers' opportunistic next-step logic — ALSO INVALID).
+  - Launch 4 wrappers in parallel; new finalizer requires
+    TERM_NORMALLY ∧ HURRAY ∧ VIBRATIONAL_FREQUENCIES present.

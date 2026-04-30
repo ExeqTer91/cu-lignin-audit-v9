@@ -1,0 +1,92 @@
+FINAL_COMPUTATIONAL_AUDIT_STATUS.txt
+Generated: 2026-04-30T11:35:09.602131+00:00
+Audit version: v9 (handover release)
+
+================================================================
+PIPELINE STATUS
+================================================================
+Tier A naked Cu+ adducts:                   COMPLETE  (18 species)
+Tier B CuI / Cu2I2 cluster controls:        COMPLETE  (Set B, C, V2)
+Set D alt rotamer scan (Task #29 V2):       COMPLETE  (4 species)
+Conservative classifier (Task #28):         COMPLETE  (RECLASSIFICATION_NOTES.md)
+v9 master tables propagation:               COMPLETE
+  CLAIM_SUPPORT_STATUS.csv                  COMPLETE
+  MECHANISM_VERDICT_TABLE.csv               COMPLETE
+  SITE_OCCUPANCY_TABLE.csv                  COMPLETE
+  BELEGEN_EVIDENCE_MATRIX.csv               COMPLETE (E4.3 = DATA_LOST_POD_WIPE)
+  BINDING_SURVIVAL_TABLE.csv                COMPLETE  (extended + reclassified)
+  RANK_REVERSAL_TABLE.csv                   COMPLETE  (extended)
+  LIGNIN_APPENDIX_STATE_TABLE.csv           COMPLETE  (NEW)
+  LIGNIN_APPENDIX_STATE_MODE_TABLE.csv      COMPLETE  (NEW)
+  V9_GEOMETRY_TABLE.csv                     COMPLETE  (NEW)
+  MANUSCRIPT_IMPACT_v8_to_v9.md             COMPLETE  (sections 1-15)
+
+================================================================
+OPTIONAL HIGH-GRID SENSITIVITY (Section 1.4 of handover)
+================================================================
+Status:        FAILED_ORCA_XCGRID  (recorded in GRID_SENSITIVITY_STATUS.csv)
+Reason:        Pod stop+start cycle on 2026-04-30T11:02Z wiped /root,
+               then re-provisioned with a 488 MiB container memory cgroup.
+               First ORCA attempt (nprocs 16, maxcore 4000): SIGKILL on rank 0.
+               Fallback (nprocs 8, maxcore 2000, lean-SCF): runs but at
+               ~67 s per SCF iteration -- ~5 h projected wall time for the
+               6-SP queue, vs the ~30 min budget when the pod had its
+               prior 16-core / 64 GB allocation.
+Recovery:      All input files (cu2i2_veratrole_methoxyO_startA gas/SMD,
+               cu2i2_rhombic gas/SMD, veratrole_free gas/SMD; six SPs at
+               B3LYP-D3BJ/def2-TZVP RIJCOSX def2/J TightSCF Grid5
+               FinalGrid6) and the orchestration script (run_queue.sh)
+               are staged at audit_final_setD_alt_diag/grid_test/inputs/.
+               Re-run is a single 'bash run_queue.sh' on a pod with
+               >= 32 GB container memory.
+Effect on v9 conclusions:
+               NONE for the qualitative thesis. The DefGrid3 result is
+               internally consistent (cu2i2_rhombic and veratrole_free use
+               the same grid as the complex), and the BE numbers are
+               reported with that scope clearly stated. Logged as Open
+               Caveat in V9_HANDOVER_PACKAGE.md Section N.
+
+================================================================
+DATA LOSS
+================================================================
+Item:          /workspace/results_setD/cu2i2_veratrole_pi_opt_freq.out
+                 (E4.3 evidence row in BELEGEN_EVIDENCE_MATRIX)
+Cause:         RunPod pod stop+start cycle on 2026-04-30T11:02Z wiped
+               /root volume (only /workspace persists across stop+start).
+Mitigation:    Energies (E_gas, E_smd, BE) and n_imag for E4.3 are
+               pedigreed in audit_final/EXPERIMENT_JOB_INDEX.csv with
+               sha256 ef4266f6..ede18a captured BEFORE the wipe.
+               BELEGEN row 19 was annotated DATA_LOST_POD_WIPE 2026-04-30T11:02Z;
+               final geometry / contact distances cannot be re-extracted
+               without re-running cu2i2_veratrole_pi (out of scope for this
+               handover; same memory-cgroup blocker applies).
+Effect on v9 conclusions:
+               NONE. BE and n_imag remain pedigreed; the SUPPORTED
+               verdict for E4.3 holds. Geometry-level descriptors for the
+               pi mode of cu2i2-veratrole are reported as NA in
+               V9_GEOMETRY_TABLE.csv.
+
+================================================================
+ARTIFACTS DELIVERED FOR MANUSCRIPT WRITER
+================================================================
+audit_final/V9_HANDOVER_PACKAGE.md          (single source of truth)
+audit_final/V9_GEOMETRY_TABLE.csv
+audit_final/ORCA_BINDING_ENERGIES.csv       (canonical)
+audit_final/RAW_FILE_INDEX.csv              (with sha256)
+audit_final/BELEGEN_EVIDENCE_MATRIX.csv
+audit_final/CLAIM_SUPPORT_STATUS.csv
+audit_final/MECHANISM_VERDICT_TABLE.csv
+audit_final/SITE_OCCUPANCY_TABLE.csv
+audit_final/BINDING_SURVIVAL_TABLE.csv      (extended + reclassified)
+audit_final/BINDING_SURVIVAL_SUMMARY.txt
+audit_final/RANK_REVERSAL_TABLE.csv
+audit_final/LIGNIN_APPENDIX_STATE_TABLE.csv
+audit_final/LIGNIN_APPENDIX_STATE_MODE_TABLE.csv
+audit_final/RECLASSIFICATION_NOTES.md
+audit_final/GRID_SENSITIVITY_STATUS.csv
+audit_final/MANUSCRIPT_IMPACT_v8_to_v9.md
+audit_final/V9_CASE_DECISION.md
+audit_final/OXIDE_AGING_REGIME_NOTE.md
+audit_final/AUDIT_FINAL.md
+
+End of audit. Computing stops. Manuscript drafting on a different platform.
