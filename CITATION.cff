@@ -18,6 +18,7 @@ license: CC-BY-4.0
 repository-code: 'https://github.com/ExeqTer91/cu-lignin-audit-v9'
 preferred-citation:
   type: generic
+  journal: ACS Applied Engineering Materials
   title: >-
     Mode-Selective CuI Anchoring on Lignin-Inspired Fiber Interfaces:
     A DFT Cluster-Model Study (manuscript submitted; under peer review)
