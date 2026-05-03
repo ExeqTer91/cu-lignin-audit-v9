@@ -10,10 +10,12 @@ procedure.
   <https://orcaforum.kofo.mpg.de/>)
 - Sufficient compute to run B3LYP-D3(BJ)/def2-TZVP optimizations and
   frequency analyses on systems up to ~30 atoms. Production
-  calculations in this study were run on RunPod A100-hosted instances
-  using the CPU resources available on those nodes (typically 16
-  cores, 64 GB RAM); ORCA DFT jobs of this size are CPU-bound and
-  no GPU acceleration is required to reproduce the reported results.
+  calculations in this study were run on the **CPU host of RunPod
+  A100 nodes** (typically 16 cores, 64 GB RAM); the A100 GPU itself
+  was **not** used. ORCA DFT jobs of this size are CPU-bound, and
+  no GPU acceleration is required (or applicable) to reproduce the
+  reported results -- any equivalent x86_64 Linux host with >=16
+  cores and >=32 GB RAM will reproduce the calculations.
   Typical wall times were 30 minutes to 6 hours per opt+freq job.
 
 ## Reconstructing an input file

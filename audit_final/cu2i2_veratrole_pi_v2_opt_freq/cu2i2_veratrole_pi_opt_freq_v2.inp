@@ -1,0 +1,10 @@
+! B3LYP D3BJ def2-TZVP def2/J RIJCOSX TightSCF DefGrid3 Opt Freq
+
+%geom
+  MaxIter 200
+end
+
+%pal nprocs 8 end
+%maxcore 5000
+
+* xyzfile 0 1 cu2i2_veratrole_pi_opt_freq_v2_start.xyz

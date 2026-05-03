@@ -73,8 +73,17 @@ Effect on v9 conclusions:
                Caveat in V9_HANDOVER_PACKAGE.md Section N.
 
 ================================================================
-DATA LOSS
+DATA LOSS  [SUPERSEDED 2026-04-30T18:30Z -- see banner at top of file]
 ================================================================
+*** The text in this section is OBSOLETE and retained only for ***
+*** audit-trail continuity. cu2i2_veratrole_pi_opt_freq.out was ***
+*** RECOVERED on 2026-04-30T15:19Z (SHA-256 f2a9007b..a8ff2),   ***
+*** and Cu2I2-veratrole pi-mode geometry has subsequently been  ***
+*** re-optimized to convergence with full Opt+Freq verification ***
+*** (see BINDING_SURVIVAL_TABLE.csv and V9_GEOMETRY_TABLE.csv   ***
+*** for current canonical values). Read this section as         ***
+*** historical record only.                                     ***
+
 Item:          /workspace/results_setD/cu2i2_veratrole_pi_opt_freq.out
                  (E4.3 evidence row in BELEGEN_EVIDENCE_MATRIX)
 Cause:         RunPod pod stop+start cycle on 2026-04-30T11:02Z wiped
@@ -86,11 +95,16 @@ Mitigation:    Energies (E_gas, E_smd, BE) and n_imag for E4.3 are
                final geometry / contact distances cannot be re-extracted
                without re-running cu2i2_veratrole_pi (out of scope for this
                handover; same memory-cgroup blocker applies).
+               [SUPERSEDED: file recovered 2026-04-30T15:19Z; geometry
+                re-optimized with full Opt+Freq in v9.4 cycle.]
 Effect on v9 conclusions:
                NONE. BE and n_imag remain pedigreed; the SUPPORTED
-               verdict for E4.3 holds. Geometry-level descriptors for the
-               pi mode of cu2i2-veratrole are reported as NA in
+               verdict for E4.3 holds. Geometry-level descriptors for
+               the pi mode of cu2i2-veratrole are reported as NA in
                V9_GEOMETRY_TABLE.csv.
+               [SUPERSEDED: V9_GEOMETRY_TABLE.csv now carries the
+                recovered/re-optimized descriptors; row 19 verdict is
+                RECOVERED_RECONFIRMED in the v2 status file.]
 
 ================================================================
 ARTIFACTS DELIVERED FOR MANUSCRIPT WRITER
