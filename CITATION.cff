@@ -3,7 +3,7 @@ message: >-
   If you use this dataset, please cite both the dataset itself and the
   associated manuscript.
 title: >-
-  Cu-Lignin DFT Audit Pipeline (v9): Mode-Selective CuI Anchoring on
+  Cu-Lignin DFT Audit Pipeline (v9.5.2): Mode-Selective CuI Anchoring on
   Lignin-Inspired Fiber Interfaces
 type: dataset
 authors:
@@ -12,13 +12,12 @@ authors:
     orcid: 'https://orcid.org/0009-0002-6114-5011'
     email: contact@andreiursachi.eu
     affiliation: Independent Researcher, Diepholz, Germany
-date-released: 2026-04-30
-version: v9.0
+date-released: 2026-05-04
+version: v9.5.2
 license: CC-BY-4.0
 repository-code: 'https://github.com/ExeqTer91/cu-lignin-audit-v9'
 preferred-citation:
   type: generic
-  journal: ACS Applied Engineering Materials
   title: >-
     Mode-Selective CuI Anchoring on Lignin-Inspired Fiber Interfaces:
     A DFT Cluster-Model Study (manuscript submitted; under peer review)
@@ -30,5 +29,6 @@ preferred-citation:
   notes: >-
     Manuscript submitted to a peer-reviewed journal; under review.
     Journal name and DOI will be added to this citation upon
-    acceptance. For the underlying dataset (this repository), please
+    acceptance. A Zenodo dataset DOI will be minted before final
+    publication. For the underlying dataset (this repository), please
     cite the dataset entry above.
