@@ -8,6 +8,17 @@ versioning follows the manuscript-revision cycle, not strict semver.
 
 ---
 
+## [v9.5.5] — 2026-05-04
+
+### Submitted package alignment
+- Repository aligned with ACS Applied Engineering Materials v9.5.5 submitted package.
+- CITATION.cff updated with Zenodo concept DOI 10.5281/zenodo.20006530 and version DOI 10.5281/zenodo.20006531.
+- Added FINAL_COMPUTATIONAL_AUDIT_STATUS_v3 to supersede the older v2 status for cu2i2_veratrole_pi.
+- README provenance note updated with v9.5.5 canonical soft-mode treatment.
+- No scientific conclusions changed relative to v9.4; v9.5.5 is the submitted manuscript package.
+
+---
+
 ## [v9.4] — 2026-05-03
 
 ### Added

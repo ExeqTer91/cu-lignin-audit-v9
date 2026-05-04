@@ -92,6 +92,14 @@ the storage event) gave binding energies of −22.99 kcal/mol (gas) and
 −23.12 kcal/mol (SMD water), in agreement with the recovered
 production result (−22.98 / −23.11) within rounding.
 
+**v9.5.5 update (2026-05-04):** The canonical current treatment of
+`cu2i2_veratrole_pi` is the v2 Opt+Freq/SMD-SP confirmation. The structure
+is classified as a **soft-mode bound η²-arene Cu₂I₂·veratrole** structure
+with BE_gas = −23.71 kcal/mol, BE_smd(FSP) = −23.00 kcal/mol,
+n_imag = 1 at −15.82 cm⁻¹, and Cu₂I₂-core participation of 2.4% in the
+imaginary mode. The mode is dominated by methoxy torsion and arene C–H
+wagging; see `CHANGELOG.md` and `audit_final/BINDING_SURVIVAL_TABLE.csv`.
+
 ## Citation
 
 If you use this dataset, please cite the manuscript and this

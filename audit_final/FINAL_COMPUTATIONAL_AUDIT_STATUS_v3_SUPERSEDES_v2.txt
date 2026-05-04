@@ -1,0 +1,22 @@
+FINAL_COMPUTATIONAL_AUDIT_STATUS_v3
+Generated: 2026-05-04
+Supersedes: FINAL_COMPUTATIONAL_AUDIT_STATUS_v2_SUPERSEDES_20260430T1135.txt
+
+This v3 status aligns the audit repository with the ACS Applied Engineering Materials v9.5.5 submitted package.
+
+Canonical current status for cu2i2_veratrole_pi:
+- v2 Opt+Freq confirmation completed.
+- Geometry: η²-arene Cu₂I₂·veratrole.
+- BE_gas = −23.71 kcal/mol.
+- BE_smd(FSP) = −23.00 kcal/mol.
+- n_imag = 1.
+- imaginary mode = −15.82 cm⁻¹.
+- mode character = methoxy torsion + arene C–H wagging.
+- Cu₂I₂ core participation = 2.4%.
+- classification = STRONG_BINDING_SOFT_MODE / soft-mode bound structure.
+- manuscript use = supportive secondary η²-arene channel.
+
+Canonical files:
+- audit_final/BINDING_SURVIVAL_TABLE.csv
+- CHANGELOG.md v9.4/v9.5.5 notes
+- submitted manuscript package ACSAEM_v9_5_5
